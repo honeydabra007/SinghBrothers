@@ -20,10 +20,11 @@ const Realitem = ({ question, answer }) => {
     </div>
   );
 };
+
 const Real = () =>{
   return(
     <div className='font-OpenSans'>
-      <div className=' p-[20px] md:p-[140px] h-auto bg-cover gap-2 flex flex-col text-white mb-8 md:mb-0 ' style={{ backgroundImage: 'url("/Realstate.jpg")' }} >
+      <div className=' p-[20px] md:p-[140px] h-auto bg-cover gap-2 flex flex-col text-white mb-8 md:mb-0 ' style={{ backgroundImage: 'url("/Realstate (1).jpg")' }} >
         <h1 className=' mt-0 md:mt-20  text-[2em] md:text-[3.8em] pt-40 md:pt-0'>Real Estate Law</h1>
         <p className='text-[.9em] md:text-[1.5em] w-[260px] md:w-[500px]'>Drafting agreements, managing closings, resolving disputes, and ensuring zoning compliance for smooth property transactions and ownership.</p>
         <Link to="/contact">
