@@ -1,0 +1,118 @@
+
+
+
+.Touch{
+  background-color: rgba(168, 219, 219, 0.767);
+}
+.card{
+  overflow-x: scroll;
+}
+.marquee-container {
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.marquee-content {
+  display: flex;
+ gap:50px;
+  animation: marquee 30s linear infinite;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.marquee-img {
+  height: 10rem; /* equivalent to h-40 in Tailwind */
+  width: 10rem; /* equivalent to w-40 in Tailwind */
+  object-fit: contain;
+  display: inline-block;
+  
+  margin-right: 1rem; /* add spacing between images */
+}
+.img{
+  box-shadow: 0 20px 40px blue;
+}
+.Education {
+  
+  background-image: url("../public/Eduteam.jpg");
+}
+
+
+
+/* 
+<div className=' hidden border-r-8	 absolute top-20  w-full left-0 bg-white p-4  text-blue-500 rounded-[8px] group-hover:block '>
+    <ul>
+    <li className='  mt-3  flex items-center  '><a href='' className='flex w-[200px] justify-between'>Overview<IoIosArrowForward/></a>
+        <div className='  absolute  top-6 left-[17rem] w-[850px]  '>
+            <h1 className='text-[1.7em]'>TCS is here to make a difference through technology.</h1>
+            <p className='text-[1.1em]'>Leading the way in innovation for over 55 years, we build greater futures for businesses across multiple industries and 55 countries</p>
+            <button className=' text-center rounded-[40px] bg-blue-500 w-[190px]  text-white p-2 text-[.8em] transition-all duration-200 ease-in-out hover:navy'>Discover All solution</button>
+        </div>
+    </li>
+    <li className='mt-3 flex items-center '>Industries<IoIosArrowForward/>
+    
+    </li>
+    <li className='mt-3 flex items-center'>Services<IoIosArrowForward/></li>
+    <li className='mt-3 flex items-center'>Product & Platform<IoIosArrowForward/></li>
+    <li className='mt-3 flex items-center 	'>Research & Innovation<IoIosArrowForward/></li>
+    </ul>
+    
+    
+    </div> */
+    .input-wrapper {
+      width: 50%;
+      height: 2.5rem;
+      border: none;
+      border-radius: 10px;
+      padding: 0 15px;
+      box-shadow: 0px 0px 8px #ddd;
+      background-color: white;
+      display: flex;
+   
+      align-items: center;
+    }
+    
+    input {
+      background-color: transparent;
+      border: none;
+      height: 100%;
+      font-size: 1.25rem;
+      width:100%;
+      margin-left: 5px;
+    }
+    
+    input:focus {
+      outline: none;
+    }
+    
+    #search-icon {
+      color: royalblue;
+    }
+    .results-list {
+      width: 40%;
+      margin: auto;
+     
+
+      display: flex;
+      flex-direction: column;
+      box-shadow: 0px 0px 8px #ddd;
+      border-radius: 10px;
+    
+      max-height: 300px;
+      overflow-y: auto;
+    }
+    .search-result {
+      padding: 10px 20px;
+    }
+    
+    .search-result:hover {
+      background-color: #efefef;
+    }
+
+    
