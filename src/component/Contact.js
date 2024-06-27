@@ -53,7 +53,7 @@ const Contact = () => {
     }
   };
   return (
-    <div className='font-OpenSans w-full overflow-hidden '>
+    <div className='font-OpenSans'>
       <div className='p-[20px] md:p-[60px] h:auto  bg-cover gap-2 flex flex-col ' style={{ backgroundImage: 'url("/Company (2) (1).jpg")' }}>
         <div data-aos="zoom-in">
           <h1 className=' p-2  text-[1.2em] md:text-[2.5em] text-white'>Make An Appointment Here</h1>

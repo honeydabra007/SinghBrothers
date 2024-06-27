@@ -44,7 +44,7 @@ const Nav = ({ setResults }) => {
   };
 
     return (
-        <div className='relative '>
+        <div className='relative'>
             <div className='flex w-[360px] md:w-auto justify-around p-0 md:p-4 mt-4 md:mt-0 shadow-sm    '>
             
                 <div className=''>
@@ -102,11 +102,11 @@ const Nav = ({ setResults }) => {
                     aria-controls="navbar-cta"
                     aria-expanded={isClick ? 'true' : 'false'}
                   >
-                    <span className="sr-only">Toggle Main Menu</span>
+                    <span className="sr-only relative">Toggle Main Menu</span>
                     {isClick ? (
-                      <RxCross1 className="block md:hidden w-5 h-5" aria-hidden="true" />
+                      <RxCross1 className="block absolute  right-4 top-6 md:hidden w-5 h-5" aria-hidden="true" />
                     ) : (
-                      <RxHamburgerMenu className="block md:hidden w-5 h-5" aria-hidden="true" />
+                      <RxHamburgerMenu className="block   absolute right-4 top-6 md:hidden w-5 h-5" aria-hidden="true" />
                     )}
                   </button>
 

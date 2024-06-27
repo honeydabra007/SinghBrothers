@@ -23,10 +23,10 @@ const Homeitem = ({ question, answer }) => {
         className="flex items-center justify-between w-full px-4 py-3 bg-white rounded-lg shadow-md hover:shadow-lg focus:outline-none"
         onClick={() => setIsOpen(!isOpen)}
       >
-        <span className="text-lg font-semibold font-Poppins">{question}</span>
-        {isOpen ? <FiMinus size={20} className="text-gray-600" /> : <FiPlus  size={20} className="text-gray-600" />}
+        <span className=" text-[.7em] md:text-[1.2em] font-semibold font-Poppins">{question}</span>
+        {isOpen ? <FiMinus  className="text-gray-600 text-[1em] md:text-[1.5em]" /> : <FiPlus   className="text-gray-600 text-[1em] md:text-[1.5em]" />}
       </button>
-      {isOpen && <p className="mt-2 px-4 py-3 text-gray-900 bg-gray-100 rounded-lg font-Poppins shadow-md">{answer}</p>}
+      {isOpen && <p className="mt-2 px-4 py-3 text-[.6em] md:text-[1em]  text-gray-900 bg-gray-100 rounded-lg font-Poppins shadow-md">{answer}</p>}
     </div>
   );
 };
@@ -58,31 +58,31 @@ const Home = () =>{
 <div  className='flex flex-col justify-center items-center mt-6 '>
 <h1 className=' text-[2em] md:text-[3em] font-bold '>OUR SERVICES</h1>
 <div className='flex p-8 flex-wrap justify-center gap-8'>
-<div data-aos="fade-up"  data-aos-duration="1000" className=' w-[300px] md:w-[400px] bg-blue-200 p-8  shadow-lg shadow-cyan-950 rounded-br-[30px]  rounded-tl-[30px]  '>
+<div data-aos="fade-up"  data-aos-duration="600" className=' w-[300px] md:w-[400px] bg-blue-200 p-8  shadow-lg shadow-cyan-950 rounded-br-[30px]  rounded-tl-[30px]  '>
 <MdCastForEducation  className="text-[2.8em]"/>
 <h1 className="text-sky-900  text-[1.6em] mt-4 font-bold">Education Service</h1>
 <p className='mt-4'>This company is a premier provider of comprehensive education consulting services, committed to empowering individuals, educational institutions, and organizations to achieve their academic goals and maximize their potential</p>
 <button className='bg-white rounded-3xl flex justify-between items-center m-auto w-[200px] mt-2 p-4'>Get More Details<Link to="/edu"><PiArrowRightLight className='animate-ping' /></Link></button>
 </div>
-<div data-aos="fade-up"  data-aos-duration="1200" className=' w-[300px] md:w-[400px] bg-blue-200 p-8 shadow-lg shadow-cyan-950 rounded-br-[30px]  rounded-tl-[30px] '>
+<div data-aos="fade-up"  data-aos-duration="700" className=' w-[300px] md:w-[400px] bg-blue-200 p-8 shadow-lg shadow-cyan-950 rounded-br-[30px]  rounded-tl-[30px] '>
 <MdRealEstateAgent  className="text-[2.8em]"/>
 <h1 className="text-sky-900 mt-4 text-[1.6em] font-bold">Real Estate and Property Law</h1>
 <p className='mt-4'>We offer legal support and guidance on real estate transactions, property acquisitions, leasing agreements, land use regulations, zoning issues, and property disputes to clients involved in the real estate sector.</p>
 <button className='bg-white rounded-3xl flex justify-between m-auto items-center w-[200px] mt-2 p-4'>Get More Details<Link to="/edu"><PiArrowRightLight className='animate-ping' /></Link></button>
 </div>
-<div data-aos="fade-up"  data-aos-duration="1400" className=' w-[300px] md:w-[400px] bg-blue-200 p-8 shadow-lg shadow-cyan-950 rounded-br-[30px]  rounded-tl-[30px] '>
+<div data-aos="fade-up"  data-aos-duration="800" className=' w-[300px] md:w-[400px] bg-blue-200 p-8 shadow-lg shadow-cyan-950 rounded-br-[30px]  rounded-tl-[30px] '>
 <MdCorporateFare  className="text-[2.8em]"/>
 <h1 className="text-sky-900  mt-4 text-[1.6em] font-bold">Government Corporate</h1>
 <p className='mt-4'>Our company is a trusted provider of government corporate services with specialized legal consultancy, dedicated to assisting government agencies, public sector organizations, and corporate entities in navigating complex legal and regulatory landscapes.</p>
 <button className='bg-white rounded-3xl flex m-auto justify-between items-center w-[200px] mt-2 p-4'>Get More Details<Link to="/edu"><PiArrowRightLight className='animate-ping' /></Link></button>
 </div>
-<div data-aos="fade-up"  data-aos-duration="1600" className=' w-[300px] md:w-[400px] bg-blue-200 p-8 shadow-lg shadow-cyan-950 rounded-br-[30px]  rounded-tl-[30px] '>
+<div data-aos="fade-up"  data-aos-duration="900" className=' w-[300px] md:w-[400px] bg-blue-200 p-8 shadow-lg shadow-cyan-950 rounded-br-[30px]  rounded-tl-[30px] '>
 <MdHealthAndSafety  className="text-[2.8em]"/>
 <h1 className="text-sky-900 text-[1.6em] mt-4 font-bold">Healthcare Law and Regulatory Compliance</h1>
 <p className='mt-4'>Providing legal guidance to healthcare providers, pharmaceutical companies, and medical device manufacturers on regulatory compliance. Assisting with healthcare licensing, accreditation, reimbursement, and fraud and abuse prevention</p>
 <button className='bg-white rounded-3xl flex m-auto justify-between items-center w-[200px] mt-2 p-4'>Get More Details<Link to="/edu"><PiArrowRightLight className='animate-ping' /></Link></button>
 </div>
-<div data-aos="fade-up"  data-aos-duration="1800" className=' w-[300px] md:w-[400px] bg-blue-200 p-8 shadow-lg shadow-cyan-950 rounded-br-[30px]  rounded-tl-[30px] '>
+<div data-aos="fade-up"  data-aos-duration="1000" className=' w-[300px] md:w-[400px] bg-blue-200 p-8 shadow-lg shadow-cyan-950 rounded-br-[30px]  rounded-tl-[30px] '>
 <BsBank2  className="text-[2.8em]"/>
 <h1 className="text-sky-900 text-[1.6em] mt-4 font-bold">Banking & Finance</h1>
 <p className='mt-4'>This company is a leading provider of comprehensive banking and finance services, dedicated to delivering tailored financial solutions and expertise to individuals, businesses, and institutions.</p>
@@ -130,19 +130,19 @@ const Home = () =>{
 <p className='text-[1em] font-semibold px-6 mt-4'>
 Strategic planning sets an organization's long-term goals and outlines how to achieve them</p>
 </div>
-<div data-aos="fade-up" data-aos-duration="1200" className='h-[340px] w-[280px] shadow-lg shadow-sky-400 rounded-br-[30px] rounded-tl-[30px] bg-blue-100'>
+<div data-aos="fade-up" data-aos-duration="1100" className='h-[340px] w-[280px] shadow-lg shadow-sky-400 rounded-br-[30px] rounded-tl-[30px] bg-blue-100'>
 <FaCoins className='text-[3.5em] bg-indigo-950 text-white p-2 rounded-tl-[30px]'/>
 <h1 className='text-[1.5em] font-bold px-6 mt-28'>Finance Advisor</h1>
 <p className='text-[1em] font-semibold px-6 mt-4 '>Your Private Finance Advisor For A Secure
 For Easy Money Management, To Travel Perks And Investments.</p>
 </div>
-<div data-aos="fade-up" data-aos-duration="1400" className='h-[340px]  w-[280px] shadow-lg shadow-sky-400 rounded-br-[30px] rounded-tl-[30px] bg-blue-100'>
+<div data-aos="fade-up" data-aos-duration="1100" className='h-[340px]  w-[280px] shadow-lg shadow-sky-400 rounded-br-[30px] rounded-tl-[30px] bg-blue-100'>
 <MdOutlineAlignVerticalBottom className='text-[3.5em] bg-indigo-950 text-white p-2 rounded-tl-[30px]'/>
 <h1 className='text-[1.5em] font-bold  px-6 mt-28'>Market Research</h1>
 <p className='text-[1em] font-semibold px-6 mt-4'>Market research gathers and analyzes data to understand market conditions and customer needs</p>
 
 </div>
-<div data-aos="fade-up" data-aos-duration="1600" className='h-[340px]  w-[280px] shadow-lg shadow-sky-400 rounded-br-[30px] rounded-tl-[30px] bg-blue-100'>
+<div data-aos="fade-up" data-aos-duration="1300" className='h-[340px]  w-[280px] shadow-lg shadow-sky-400 rounded-br-[30px] rounded-tl-[30px] bg-blue-100'>
 <GoPerson className='text-[3.5em] bg-indigo-950 text-white p-2 rounded-tl-[30px]'/>
 <h1 className='text-[1.5em] font-bold px-6 mt-28'>HR Management</h1>
 <p className='text-[1em] px-6 font-semibold mt-4'>

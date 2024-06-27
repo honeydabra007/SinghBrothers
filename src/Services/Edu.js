@@ -16,10 +16,10 @@ const Eduitem = ({ question, answer }) => {
         className="flex items-center justify-between w-full px-4 py-3 bg-white rounded-lg shadow-md hover:shadow-lg focus:outline-none"
         onClick={() => setIsOpen(!isOpen)}
       >
-        <span className="text-lg font-semibold font-Poppins">{question}</span>
-        {isOpen ? <FiMinus size={20} className="text-gray-600" /> : <FiPlus  size={20} className="text-gray-600" />}
+        <span className=" text-[.7em] md:text-[1.2em] font-semibold font-Poppins">{question}</span>
+        {isOpen ? <FiMinus  className="text-gray-600 text-[1em] md:text-[1.5em]" /> : <FiPlus  size={20} className="text-gray-600 text-[1em] md:text-[1.5em]" />}
       </button>
-      {isOpen && <p className="mt-2 px-4 py-3 text-gray-900 bg-gray-100 rounded-lg font-Poppins shadow-md">{answer}</p>}
+      {isOpen && <p className="mt-2 px-4 py-3  text-[.6em] md:text-[1em]   text-gray-900 bg-gray-100 rounded-lg font-Poppins shadow-md">{answer}</p>}
     </div>
   );
 };
@@ -35,7 +35,7 @@ const Edu = () =>{
     />
     <div className='  flex flex-col p-4 md:p-32 gap-4 md:gap-0  absolute top-0 left-0 w-full h-[80vh] text-white' style={{backgroundColor: 'rgba(0, 0, 0, 0.5)' }}>
     <h1 className=' text-[1em] md:text-[1.5em] pt-40 md:pt-0'>Learning For A</h1>
-     <p className=' text[2em] md:text-[3.5em] w-[270px] md:w-[500px]'>Better Future</p>
+     <p className=' text[2.5em] md:text-[3.5em] w-[270px] md:w-[500px]'>Better Future</p>
    </div>
 
     </div>

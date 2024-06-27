@@ -13,10 +13,10 @@ const Bankitem = ({ question, answer }) => {
         className="flex items-center justify-between w-full px-4 py-3 bg-white rounded-lg shadow-md hover:shadow-lg focus:outline-none"
         onClick={() => setIsOpen(!isOpen)}
       >
-        <span className="text-lg font-semibold font-Poppins">{question}</span>
-        {isOpen ? <FiMinus size={20} className="text-gray-600" /> : <FiPlus  size={20} className="text-gray-600" />}
+        <span className="text-[.7em] md:text-[1.2em] font-semibold font-Poppins">{question}</span>
+        {isOpen ? <FiMinus className="text-[1em] md:text-[1.5em] text-gray-600" /> : <FiPlus  className="text-gray-600 text-[1em] md:text-[1.5em]" />}
       </button>
-      {isOpen && <p className="mt-2 px-4 py-3 text-gray-900 bg-gray-100 rounded-lg font-Poppins shadow-md">{answer}</p>}
+      {isOpen && <p className="mt-2 px-4 py-3 text-[.6em] md:text-[1em]  text-gray-900 bg-gray-100 rounded-lg font-Poppins shadow-md">{answer}</p>}
     </div>
   );
 };
@@ -120,7 +120,7 @@ const Bank = () =>{
     
     </div>
     <div className=" max-w-5xl mx-auto mt-14">
-    <h2 className="mb-8 text-3xl font-semibold font-Poppins text-center text-gray-800">Frequently Asked Questions</h2>
+    <h2 className="mb-8   text-xl md:text-3xl font-semibold font-Poppins text-center text-gray-800">Frequently Asked Questions</h2>
     <div>
     <Bankitem
       question=" What does a finance consultant do?"

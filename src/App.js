@@ -7,7 +7,6 @@ import About from './component/About';
 import Service from './component/Service';
 import Footer from './component/Footer';
 import Contact from './component/Contact';
-
 import Edu from './Services/Edu';
 import Real from './Services/Real';
 import Bank from './Services/Bank';
@@ -38,7 +37,7 @@ const App = () => {
   }, []);
 
   return (
-    <div className='w-full overflow-hidden '>
+    <div>
       <BrowserRouter>
         <div className="App">
           <div className="search-bar-container">

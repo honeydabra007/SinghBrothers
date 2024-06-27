@@ -9,7 +9,7 @@ const RajInfoBox = ({ title, description, details, img }) => {
     };
 
     return (
-        <div className="p-4  bg-white border border-gray-300 w-[300px] md:w-[400px] rounded-xl shadow-2xl transition-all">
+        <div className="p-4 font-OpenSans bg-white border border-gray-300 w-[300px] md:w-[400px] rounded-xl shadow-2xl transition-all">
             <div className="mb-2">
                 <img src={img} alt={title} className="w-full h-56 object-cover rounded-md" />
             </div>
@@ -81,7 +81,7 @@ const Raj = () => {
     ];
 
     return (
-        <div className='w-full overflow-hidden '>
+        <div className='w-full font-OpenSans overflow-hidden '>
             <div className='px-0 md:px-72 flex flex-col md:flex-row items-center h-auto md:h-[70vh] gap-2 md:gap-16 bg-indigo-200 '>
                 <div className='mt-10'>
                     <img className='h-[250px] md:h-[350px] w-[250px] md:w-[650px]' src='/Ind-Gov.png' alt='' />
@@ -92,7 +92,7 @@ const Raj = () => {
                     The Government of Rajasthan is committed to fostering inclusive growth, sustainable development, and good governance across the state, through policy initiatives, infrastructure development, social welfare programs, and administrative reforms aimed at improving the lives of its citizens and promoting Rajasthan's progress on various fronts.</p>
                 </div>
             </div>
-            <div className='flex flex-col items-center'>
+            <div className='flex font-OpenSans flex-col items-center'>
                 <h1 className='mt-8 text-[2.2em] font-semibold'>Government of Rajasthan Services</h1>
                 <div className="flex flex-wrap justify-center mb-10 mt-10 gap-6">
                     {infoBoxes.map((box, index) => (
@@ -106,7 +106,7 @@ const Raj = () => {
                     ))}
                 </div>
             </div>
-            <div className='flex flex-col items-start md:justify-between md:flex-row p-6 md:m-auto mb-10 bg-blue-500 text-white w-[350px] md:w-full'>
+            <div className='flex flex-col font-OpenSans items-start md:justify-between md:flex-row p-6 md:m-auto mb-10 bg-blue-500 text-white w-[350px] md:w-full'>
                 <div data-aos="fade-right" className='flex flex-col gap-2 p-1 md:p-2'>
                     <h1 className='text-[1.4em] md:text-[2.5em]'>For Any Assistance, You Can Contact Us</h1>
                     <p className='text-[1em] md:text-[1.3em] w-[300px] md:w-[1000px]'>Discover personalized support and resources with our comprehensive educational assistant service, designed to enhance your learning experience and academic success</p>
