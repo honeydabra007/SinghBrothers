@@ -8,7 +8,7 @@ const About = () => {
     <div  className="relative w-full h-[80vh] font-OpenSans">
     <img
       className="object-cover w-full h-full block"
-      src={`${process.env.PUBLIC_URL}group-young-architects.jpg`}
+      src={`${process.env.PUBLIC_URL}/group-young-architects (1).jpg`}
       alt="SB Logo"
       
     />

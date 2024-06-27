@@ -22,7 +22,7 @@ const Lawitem = ({ question, answer }) => {
 };
 const Law= () =>{
   return(
-    <div className='font-OpenSans'>
+    <div className='font-OpenSans w-full overflow-hidden '>
     <div  className="relative w-full h-[80vh]">
     <img
       className="object-cover w-full h-full block"

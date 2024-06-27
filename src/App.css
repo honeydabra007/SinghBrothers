@@ -1,5 +1,9 @@
 
-
+*{
+  box-sizing: border-box; 
+  margin: 0;
+  padding: 0;
+}
 
 .Touch{
   background-color: rgba(168, 219, 219, 0.767);

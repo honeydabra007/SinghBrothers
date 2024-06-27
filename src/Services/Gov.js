@@ -23,11 +23,11 @@ const Govitem = ({ question, answer }) => {
 };
 const Gov = () =>{
   return(
-    <div className='font-OpenSans'>
+    <div className='font-OpenSans w-full overflow-hidden '>
     <div  className="relative w-full h-[80vh]">
     <img
       className="object-cover w-full h-full block"
-      src={`${process.env.PUBLIC_URL}/modern-mirror-building.jpg`}
+      src={`${process.env.PUBLIC_URL}/modern-mirror-building (1).jpg`}
       alt="SB Logo"
       
     />

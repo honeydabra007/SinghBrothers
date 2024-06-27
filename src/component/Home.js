@@ -102,10 +102,8 @@ const Home = () =>{
 
 <div className="flex flex-col gap-10 card  w-4/5 p-6 m-auto mix-blend-color-burn marquee-container bg-gray-100">
 <div className='flex items-center justify-center flex-col'>
-<h1 className='text-[2em] text-center'>We provide services related to these Government Authorities</h1>
-{
-  // <LiaMinusSolid className='text-[3em] ' size={80} />
-}
+<h1 className=' text-[1em] md:text-[2em] text-center'>We provide services related to these Government Authorities</h1>
+
 </div>
 <div className="marquee-content ">
   <img className="marquee-img " src={`${process.env.PUBLIC_URL}/logo1.jpeg`} alt="SB Logo" />

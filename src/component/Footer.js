@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { PiPhoneLight } from "react-icons/pi";
-import { TiMessage } from "react-icons/ti";
+
 import { CiMail } from "react-icons/ci";
 
 const Footer = () => {

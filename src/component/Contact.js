@@ -53,8 +53,8 @@ const Contact = () => {
     }
   };
   return (
-    <div className='font-OpenSans'>
-      <div className='p-[20px] md:p-[60px] h:auto  bg-cover gap-2 flex flex-col ' style={{ backgroundImage: 'url("/Company (2).jpg")' }}>
+    <div className='font-OpenSans w-full overflow-hidden '>
+      <div className='p-[20px] md:p-[60px] h:auto  bg-cover gap-2 flex flex-col ' style={{ backgroundImage: 'url("/Company (2) (1).jpg")' }}>
         <div data-aos="zoom-in">
           <h1 className=' p-2  text-[1.2em] md:text-[2.5em] text-white'>Make An Appointment Here</h1>
           <p className=' p-2 text-[.8em] md:text-[1.2em] text-white w-[300px] md:w-[600px]'> We are glad that you preferred to contact us. Please fill our short form and one of our friendly team members will contact you back</p>

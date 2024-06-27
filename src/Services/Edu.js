@@ -25,34 +25,35 @@ const Eduitem = ({ question, answer }) => {
 };
 const Edu = () =>{
   return (
-    <div className='font-OpenSans'>
-      <section 
-        id="edu" 
-        className="p-0 md:p-[120px] bg-cover bg-center w-[350px] md:w-full h-[80vh]" 
-        style={{ 
-          backgroundImage: 'linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(/Eduteam.jpg)' 
-        }}
-      >
-        <div className='pt-60 md:p-0'>
-          <p className='text-[1.5em] md:text-[2.0em] text-white w-[350px] md:w-[900px]'>Learning For A</p>
-          <h1 className='text-[2.8em] md:text-[5em] text-white w-[350px] md:w-[900px]'>Better Future</h1>
-        </div>
-      </section>
+    <div className='font-OpenSans w-full overflow-hidden'>
+    <div  className="relative w-full h-[80vh]">
+    <img
+      className="object-cover w-full h-full block"
+      src={`${process.env.PUBLIC_URL}/Eduteam (1).jpg`}
+      alt="SB Logo"
+      
+    />
+    <div className='  flex flex-col p-4 md:p-32 gap-4 md:gap-0  absolute top-0 left-0 w-full h-[80vh] text-white' style={{backgroundColor: 'rgba(0, 0, 0, 0.5)' }}>
+    <h1 className=' text-[1em] md:text-[1.5em] pt-40 md:pt-0'>Learning For A</h1>
+     <p className=' text[2em] md:text-[3.5em] w-[270px] md:w-[500px]'>Better Future</p>
+   </div>
+
+    </div>
       <div className='none md:relative md:flex justify-between p-4 md:p-14 gap-4 mb-10'>
         <div data-aos="fade-right" data-aos-duration="1000" className='bg-blue-400 md:bg-white h-[50vh] none md:absolute bottom-[2px] left-12 p-3 md:p-6 rounded-[8px] shadow-2xl'>
           <BsPencilSquare className='text-[2.2em]' />
           <h1 className='text-[2em]'>Quality And Standards</h1>
-          <p className='text-[1.2em] w-[320px]'>Effective education requires skilled, motivated, and well-supported teachers. Continuous professional development, fair evaluation, and adequate resources are essential for teachers to perform at their best.</p>
+          <p className='text-[1.2em] w-[300px]'>Effective education requires skilled, motivated, and well-supported teachers. Continuous professional development, fair evaluation, and adequate resources are essential for teachers to perform at their best.</p>
         </div>
         <div data-aos="zoom-out" data-aos-duration="1200" className='w-full md:w-auto bg-white md:bg-blue-400 h-[50vh] none md:absolute bottom-[2px] left-[500px] p-3 md:p-6 rounded-[8px] shadow-2xl'>
           <PiMedalThin className='text-[2.2em]' />
           <h1 className='text-[2em]'>Apply Online Course</h1>
-          <p className='text-[1.2em] w-[320px]'>Education standards serve as benchmarks to ensure consistency and equity in education. They define what students should know and be able to do at various stages of their education.</p>
+          <p className='text-[1.2em] w-[300px]'>Education standards serve as benchmarks to ensure consistency and equity in education. They define what students should know and be able to do at various stages of their education.</p>
         </div>
         <div data-aos="fade-left" data-aos-duration="1400" className='w-full md:w-auto bg-blue-400 md:bg-white h-[50vh] none md:absolute bottom-[2px] left-[930px] p-3 md:p-6 rounded-[8px] shadow-2xl'>
           <SlScreenDesktop className='text-[2.2em]' />
           <h1 className='text-[2em]'>Parents And Careers</h1>
-          <p className='text-[1.2em] w-[320px]'>Careers in education are diverse and offer numerous opportunities for individuals passionate about teaching, learning, and contributing to the academic and personal growth of others.</p>
+          <p className='text-[1.2em] w-[300px]'>Careers in education are diverse and offer numerous opportunities for individuals passionate about teaching, learning, and contributing to the academic and personal growth of others.</p>
         </div>
       </div>
 

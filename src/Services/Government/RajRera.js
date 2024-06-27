@@ -67,7 +67,7 @@ const RajRera = () => {
     ];
 
     return (
-        <div>
+        <div className='w-full overflow-hidden '>
             <div className='px-0 md:px-72 flex flex-col md:flex-row items-center h-auto md:h-[70vh] gap-2 md:gap-16 bg-indigo-200 '>
                 <div className='mt-10'>
                     <img className='h-[250px] md:h-[350px] w-[250px] md:w-[650px]' src='/logo10-removebg-preview.png' alt='' />

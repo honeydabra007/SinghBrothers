@@ -7,7 +7,7 @@ import About from './component/About';
 import Service from './component/Service';
 import Footer from './component/Footer';
 import Contact from './component/Contact';
-import Card from './component/Card';
+
 import Edu from './Services/Edu';
 import Real from './Services/Real';
 import Bank from './Services/Bank';
@@ -38,7 +38,7 @@ const App = () => {
   }, []);
 
   return (
-    <div>
+    <div className='w-full overflow-hidden '>
       <BrowserRouter>
         <div className="App">
           <div className="search-bar-container">
@@ -49,7 +49,6 @@ const App = () => {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
-          <Route path="/card" element={<Card />} />
           <Route path="/do" element={<Do />} />
           <Route path="/services" element={<Service />} />
           <Route path="/edu" element={<Edu />} />

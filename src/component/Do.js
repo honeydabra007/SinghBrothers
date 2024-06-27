@@ -12,7 +12,7 @@ import 'swiper/swiper-bundle.css';
 function Do() {
   return (
     <>
-      <div className="relative w-full h-[80vh] font-OpenSans">
+      <div className="relative w-full overflow-hidden h-[80vh] font-OpenSans">
         <img
           className="object-cover w-full h-full block"
           src={`${process.env.PUBLIC_URL}/whatwe.jpg`}
