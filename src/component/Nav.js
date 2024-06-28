@@ -55,18 +55,18 @@ const Nav = ({ setResults }) => {
                 className={`absolute z-50 top-full left-0 p-6 bg-white w-full text-xl font-semibold text-blue-500 ${isClick ? 'block' : 'hidden'} md:flex md:relative md:top-4 md:left-0 md:w-auto md:bg-none md:p-0 `}
                 id="navbar-cta"
               >
-              <Link to="/"><p className="block py-2 md:py-0 md:px-4">Home</p>
+              <Link to="/"><p className=" border-none md:hover:border-y-2 md:hover:border-t-0 md:hover:border-b-blue-400 h-[70px] block py-2 md:py-0 md:px-4">Home</p>
               </Link> 
-              <Link  to="/about"> <p className="block py-2 md:py-0 md:px-4">About Us</p>
+              <Link  to="/about"> <p className="block border-none  md:hover:border-y-2 md:hover:border-t-0  md:hover:border-b-blue-400 h-[70px]  py-2 md:py-0 md:px-4">About Us</p>
               </Link> 
-              <Link to="/do"> <p className="block py-2 md:py-0 md:px-4">What We Do</p>
+              <Link to="/do"> <p className="block border-none md:hover:border-y-2 md:hover:border-t-0  md:hover:border-b-blue-400 h-[70px]  py-2 md:py-0 md:px-4">What We Do</p>
               </Link> 
              
-              <div className='group'>
-              <button className='flex items-center gap-2'>
+              <div className='group '>
+              <button className='flex items-center  gap-2'>
                 Services <BsChevronDown className='group-hover:rotate-180' />
               </button>
-              <div className='absolute z-10 top-52 md:top-10 w-[400px]  rounded-md hidden group-hover:block bg-white p-6'>
+              <div className='absolute z-10 top-68 md:top-10 w-[400px]  rounded-md hidden group-hover:block bg-white p-6'>
                 <Link to="/edu"><p className='mt-3'>Education Services</p></Link>
                 <Link to="/real"><p className='mt-3'>Real Estate and Property Law</p></Link>
                 <Link to="/gov"><p className='mt-3'>Government Corporate</p></Link>
@@ -86,7 +86,7 @@ const Nav = ({ setResults }) => {
       />
     </div>
                 <Link to="/Contact">
-                <button className='bg-blue-500 h-10 w-20 md:w-auto text-white p-0 md:p-2   rounded-[4px]'>Contact Us
+                <button className='bg-blue-600 h-10 w-20 md:w-auto text-white p-0 md:p-2 transition-all duration-200 ease-in-out  hover:scale-[1.1] hover:shadow-lg hover:shadow-blue-600 rounded-[4px]'>Contact Us
                 </button>
                 </Link>
                 </div>
@@ -96,7 +96,7 @@ const Nav = ({ setResults }) => {
                     <button
                     onClick={toggleClick}
                     type="button"
-                    className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500
+                    className="inline-flex  items-center p-2 mt-4 mr-2 w-12 h-9 justify-center text-sm text-gray-500
                       rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200
                       dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
                     aria-controls="navbar-cta"

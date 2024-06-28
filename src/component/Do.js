@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Pagination, Scrollbar, A11y,  } from 'swiper/modules';
 import { PiArrowRightLight } from "react-icons/pi";
+import { TbMessageCircle2 } from "react-icons/tb";
 
 
 
@@ -11,8 +12,8 @@ import 'swiper/swiper-bundle.css';
 
 function Do() {
   return (
-    <>
-      <div className="relative w-full overflow-hidden h-[80vh] font-OpenSans">
+    <div className='w-full overflow-hidden'>
+      <div className="relative  h-[80vh] font-OpenSans">
         <img
           className="object-cover w-full h-full block"
           src={`${process.env.PUBLIC_URL}/whatwe.jpg`}
@@ -22,14 +23,14 @@ function Do() {
           className="flex flex-col p-4 md:p-32 gap-4 md:gap-2 absolute top-0 left-0 w-full h-[80vh] text-white"
           style={{ backgroundColor: 'rgba(0, 0, 0, 0.5)' }}
         >
-          <h1 className="text-[1.8em] md:text-[2.6em] pt-40 md:pt-0">The Best Consulting Websites That Will Inspire You</h1>
-          <p className="text-[.9em] md:text-[1.4em] w-[270px] md:w-[600px]">
+          <h1 data-aos="zoom-in"   className="text-[1.4em] md:text-[2.6em]  w-auto md:w-[600px] pt-40 md:pt-0">The Best Consulting Websites That Will Inspire You</h1>
+          <p data-aos="zoom-in"   className="text-[.8em] md:text-[1.2em] w-[270px] md:w-[600px]">
             At SinghBrothers we combine our knowledge and quick action to solve problems swiftly. Our services are hassle-free and better than the rest, making sure you have the best experience
           </p>
-          <div>
-            <Link to="/contact">
-              <button className="bg-gradient-to-r from-cyan-500 to-blue-700 h-14 rounded-[40px] w-[140px] md:w-[200px] mt-4 text-[1.5em]">Contact Us</button>
-            </Link>
+          <div >
+    
+          <Link to="/contact"><button  data-aos="fade-right" data-aos-duration="800" className='flex items-center gap-2 text-[1.2em] mt-5 bg-blue-800 p-3 rounded-[40px] absolute right-0 top-[380px] transition-all duration-150 ease-in-out '><TbMessageCircle2 classname="text-center"/> Contact </button></Link> 
+        
           </div>
         </div>
       </div>
@@ -56,8 +57,8 @@ function Do() {
           style={{ backgroundColor: 'rgba(0, 0, 0, 0.5)' }}
         >
         <div className='p-8 md:p-4 '>
-        <h1 className=' text-[2em] md:text-[4em] pt-28 md:pt-0'>Education Service</h1>
-        <p className=' text-[1em] md:text-[1.8em] w-[250px] md:w-[600px]'>Education service lines encompass a range of specialized services offered to enhance and support educational institutions, students, and educators.</p>
+        <h1 className=' text-[1.5em] md:text-[3em] pt-28 md:pt-0'>Education Service</h1>
+        <p className=' text-[.8em] md:text-[1.4em] w-[230px] md:w-[400px]'>Education service lines encompass a range of specialized services offered to enhance and support educational institutions, students, and educators.</p>
         
        
        <button className='mt-6'>
@@ -76,8 +77,8 @@ function Do() {
         >
         <div className='p-8 md:p-2'>
         
-        <h1 className='text-[2em] md:text-[4em] pt-28 md:pt-0'>Real Estate Law</h1>
-        <p className='text-[1.2em] md:text-[2em] w-[250px] md:w-[600px]'>Drafting agreements, managing closings, resolving disputes, and ensuring zoning compliance for smooth property transactions and ownership.</p>
+        <h1 className='text-[1.5em] md:text-[3em] pt-28 md:pt-0'>Real Estate Law</h1>
+        <p className='text-[.8em] md:text-[1.4em] w-[230px] md:w-[400px]'>Drafting agreements, managing closings, resolving disputes, and ensuring zoning compliance for smooth property transactions and ownership.</p>
         <button className='mt-6'>
         <Link to="/real"><PiArrowRightLight className='h-[60px] w-[60px] p-2 rounded-[60px] text-[1.5em]  m-auto bg-black animate-bounce ' /></Link>
         </button>
@@ -96,8 +97,8 @@ function Do() {
           style={{ backgroundColor: 'rgba(0, 0, 0, 0.5)' }}
         >
         <div className='p-8 md:p-4'>
-        <h1 className='text-[2em] md:text-[3.5em] pt-28 md:pt-0'>Government Corporate Service</h1>
-        <p className='text-[1.2em] md:text-[2em] w-[250px] md:w-[700px]'>Government corporate law encompasses regulations on corporate formation, governance, securities, antitrust, employment, taxation, and intellectual property.</p>
+        <h1 className='text-[1.5em] md:text-[3em] pt-28 md:pt-0'>Government Corporate Service</h1>
+        <p className='text-[.8em] md:text-[1.4em] w-[230px] md:w-[500px]'>Government corporate law encompasses regulations on corporate formation, governance, securities, antitrust, employment, taxation, and intellectual property.</p>
         
       
        <button className='mt-6'>
@@ -114,8 +115,8 @@ function Do() {
           style={{ backgroundColor: 'rgba(0, 0, 0, 0.5)' }}
         >
         <div className='p-8 md:p-4'>
-        <h1 className='text-[2em] md:text-[4em] pt-28 md:pt-0'>Finance Advisor Services</h1>
-        <p className='text-[1.2em] md:text-[2em] w-[250px] md:w-[600px]'>Your Private Finance Advisor For A Secure
+        <h1 className='text-[1.5em] md:text-[3em] pt-28 md:pt-0'>Finance Advisor Services</h1>
+        <p className='text-[.8em] md:text-[1.4em] w-[230px] md:w-[400px]'>Your Private Finance Advisor For A Secure
         For Easy Money Management, To Travel Perks And Investments.</p>
         
       
@@ -134,8 +135,8 @@ function Do() {
           style={{ backgroundColor: 'rgba(0, 0, 0, 0.5)' }}
         >
         <div className='p-8 md:p-4'>
-        <h1 className='text-[2em] md:text-[4em] pt-28 md:pt-0'>Healthcare Law Services</h1>
-        <p className='text-[1.2em] md:text-[2em] w-[250px] md:w-[600px] '>Healthcare insurance law encompasses the regulations and legal frameworks governing health insurance policies and practices.
+        <h1 className='text-[1.5em] md:text-[3em] pt-28 md:pt-0'>Healthcare Law Services</h1>
+        <p className='text-[.8em] md:text-[1.4em] w-[230px] md:w-[400px] '>Healthcare insurance law encompasses the regulations and legal frameworks governing health insurance policies and practices.
         </p>
         
       
@@ -150,7 +151,7 @@ function Do() {
       </div>
       <div className='flex flex-col md:flex-row  gap-0 md:gap-24 relative bg-cyan-900'>
       <div data-aos="fade-right" className='flex flex-col gap-4 p-4 '>
-      <h1 className='text-[4.5em] text-white '>Key Values</h1>
+      <h1 className='text-[3em] text-white '>Key Values</h1>
       <p className='text-gray-300 text-[1.1em] w-[300px] md:w-[550px]'>Value begins with people, we seek to understand our market and the people within it because we care about what they want and why they want it.a Key Values section for a consultancy website, it is essential to highlight the principles and standards that guide your operations and interactions with clients.</p>
       <p className='text-gray-300 text-[1.2em] font-bold mt-6 '>Drive to Improve</p>
       <p className='text-gray-300 text-[1.2em] font-bold'>Relationship First</p>
@@ -178,7 +179,7 @@ function Do() {
       </div>
       
       </div>
-    </>
+    </div>
   );
 }
 

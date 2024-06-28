@@ -25,6 +25,7 @@ import Medical from './Services/Government/Medical';
 import Raj from './Services/Government/Raj';
 import HighCourt from './Services/Government/HighCourt';
 
+
 const App = () => {
   const [results, setResults] = useState([]);
 
@@ -64,9 +65,13 @@ const App = () => {
           <Route path="/medical" element={<Medical />} />
           <Route path="/raj" element={<Raj />} />
           <Route path="/highcourt" element={<HighCourt />} />
+        
+          
+          
          
           
         </Routes>
+      
         <Footer />
       </BrowserRouter>
     </div>

@@ -32,7 +32,7 @@ const RajRera = () => {
         {
             img: '/House.jpg',
             title: 'Physical & Financial Evaluation of project',
-            description:'Physical and financial evaluation of a RERA project involves assessing construction progress, quality, and adherence to timelines, alongside reviewing financial health, fund utilization, and compliance with regulatory requirements to ensure project viability',
+            description:'Physical and financial evaluation of a project involves assessing its feasibility, costs, benefits, and risks to determine its viability for implementation and ensure effective resource management and allocation',
             details:['Site Inspetion','Fund Utilization','Cash Flow Analysis','Compilance Check','Audit Reports','Cost Overruns','Stakeholder Communication','Report Generation']
         },
       { 
@@ -54,14 +54,14 @@ const RajRera = () => {
       { 
         img:'/House.jpg',
         title:'RERA Compliance Management',
-        description:'RERA compliance management ensures real estate developers adhere to project timelines, financial disclosures, and construction quality, safeguarding buyers interests and maintaining transparency through regular updates and audits',
+        description:'RERA compliance management ensures real estate projects comply with regulatory standards, ensuring transparency, protecting stakeholders interests, and promoting a fair marketplace for property transactions',
             details:['Project Registration','Reular Updates','Financial Compliance','Quality Assurence','Timely Completion','Quarterly Reports','Customer Communication','Rectification','Legal Compliance','Annual Audit']
       },
        
       { 
         img:'/House.jpg',
         title:'Agent registration with RERA',
-        description:'Agent registration with RERA involves submitting personal and business details, educational qualifications, and payment of fees to the RERA authority, ensuring transparency and accountability in real estate transactions',
+        description:'Agent registration with RERA (Real Estate Regulatory Authority) requires compliance with regulations, including qualifications, disclosures, and ethical standards. It aims to ensure transparency, accountability, and professionalism in real estate transactions, safeguarding consumer interests',
         details:['Documentation Prepration','Online Application','Upload Documents','Payment Of Fees','Submission','Verification','Corrections','Approval','Issuance Of Certificate','Compliance']
       }
     ];

@@ -12,9 +12,9 @@ const About = () => {
       alt="SB Logo"
       
     />
-    <div className='  flex flex-col p-4 md:p-20 font-bold  gap-4 md:gap-0  absolute top-0 left-0 w-full h-[80vh] text-white' style={{backgroundColor: 'rgba(0, 0, 0, 0.5)' }}>
-    <h1 className=' text-[1.8em] md:text-[3.5em] pt-40 md:pt-16'>Welcome to Singh-Brothers</h1>
-    <p className=' text[.9em] md:text-[1.2em] w-[270px] md:w-[650px]'>At Singh Brothers, we are dedicated to providing comprehensive services to individuals, businesses, and organizations across various sectors</p>
+    <div className='  flex flex-col p-4 md:p-20  font-semibold gap-4 md:gap-0  absolute top-0 left-0 w-full h-[80vh] text-white' style={{backgroundColor: 'rgba(0, 0, 0, 0.5)' }}>
+    <h1 data-aos="zoom-out"  className=' text-[1.4em] md:text-[3em] pt-40 md:pt-16'>Welcome to Singh-Brothers</h1>
+    <p data-aos="zoom-in"  className=' text[.9em] md:text-[1.2em] w-[270px] md:w-[650px]'>At Singh Brothers, we are dedicated to providing comprehensive services to individuals, businesses, and organizations across various sectors</p>
     <div >
     
     <Link to="/contact"><button  data-aos="fade-right" data-aos-duration="800" className='flex items-center gap-2 text-[1.2em] mt-5 bg-blue-800 p-3 rounded-[40px] absolute right-0 top-[380px] transition-all duration-150 ease-in-out '><TbMessageCircle2 classname="text-center"/> Contact </button></Link> 

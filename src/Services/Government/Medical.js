@@ -44,13 +44,13 @@ const Medical = () => {
        {
         img:'/sms.jpg',
         title:'Telemedicine Services',
-        description:'Telemedicine services provide remote medical consultations via digital platforms, enabling efficient diagnosis, treatment, and healthcare management without requiring in-person visits, enhancing accessibility and patient care',
+        description:'Telemedicine provides remote medical consultations, diagnosis, and treatment using telecommunications technology, improving access and convenience for patients and providers',
         details:['Needs Assessment','Technology Selection','Regulatory Compliance','Provider Training','Patient Education','Appointment Scheduling','Teleconsultation','Medical Records','Payment and Billing','Evaluation and Improvement']
        },
        {
         img:'/sms.jpg',
         title:'Healthcare Technology Integration',
-        description:'Healthcare technology integration enhances patient care and operational efficiency through digital tools like EHRs, telemedicine, and AI diagnostics',
+        description:'Integrating healthcare technology enhances efficiency, patient care, and data management through electronic health records, telemedicine, AI diagnostics, and wearable health devices',
         details:['Needs Assessment','Technology Selection','Vendor Evaluation','Implementation Planning','Infrastructure Preparation','Training and Education','Integration Testing','Data Migration','Go-Live Implementation','Monitoring and Optimization']
        },
        {

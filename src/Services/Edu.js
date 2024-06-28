@@ -34,23 +34,23 @@ const Edu = () =>{
       
     />
     <div className='  flex flex-col p-4 md:p-32 gap-4 md:gap-0  absolute top-0 left-0 w-full h-[80vh] text-white' style={{backgroundColor: 'rgba(0, 0, 0, 0.5)' }}>
-    <h1 className=' text-[1em] md:text-[1.5em] pt-40 md:pt-0'>Learning For A</h1>
-     <p className=' text[2.5em] md:text-[3.5em] w-[270px] md:w-[500px]'>Better Future</p>
+    <h1 className=' text-[1.2em] md:text-[3em] pt-40 md:pt-0'>Learning For A</h1>
+     <p className=' text-[2.5em] md:text-[5em] w-[300px] md:w-[500px]'>Better Future</p>
    </div>
 
     </div>
-      <div className='none md:relative md:flex justify-between p-4 md:p-14 gap-4 mb-10'>
-        <div data-aos="fade-right" data-aos-duration="1000" className='bg-blue-400 md:bg-white h-[50vh] none md:absolute bottom-[2px] left-12 p-3 md:p-6 rounded-[8px] shadow-2xl'>
+      <div className='flex flex-col   md:relative md:justify-between p-4 md:p-14 gap-4 mb-10'>
+        <div data-aos="fade-right" data-aos-duration="1000" className='bg-blue-400 md:bg-white h-[52vh] none md:absolute bottom-[2px] left-12 p-3 md:p-6 rounded-[8px] shadow-2xl'>
           <BsPencilSquare className='text-[2.2em]' />
           <h1 className='text-[2em]'>Quality And Standards</h1>
           <p className='text-[1.2em] w-[300px]'>Effective education requires skilled, motivated, and well-supported teachers. Continuous professional development, fair evaluation, and adequate resources are essential for teachers to perform at their best.</p>
         </div>
-        <div data-aos="zoom-out" data-aos-duration="1200" className='w-full md:w-auto bg-white md:bg-blue-400 h-[50vh] none md:absolute bottom-[2px] left-[500px] p-3 md:p-6 rounded-[8px] shadow-2xl'>
+        <div data-aos="zoom-out" data-aos-duration="1200" className='w-full md:w-auto bg-white md:bg-blue-400 h-[52vh] none md:absolute bottom-[2px] left-[500px] p-3 md:p-6 rounded-[8px] shadow-2xl'>
           <PiMedalThin className='text-[2.2em]' />
           <h1 className='text-[2em]'>Apply Online Course</h1>
           <p className='text-[1.2em] w-[300px]'>Education standards serve as benchmarks to ensure consistency and equity in education. They define what students should know and be able to do at various stages of their education.</p>
         </div>
-        <div data-aos="fade-left" data-aos-duration="1400" className='w-full md:w-auto bg-blue-400 md:bg-white h-[50vh] none md:absolute bottom-[2px] left-[930px] p-3 md:p-6 rounded-[8px] shadow-2xl'>
+        <div data-aos="fade-left" data-aos-duration="1400" className='w-full md:w-auto bg-blue-400 md:bg-white h-[52vh] none md:absolute bottom-[2px] left-[930px] p-3 md:p-6 rounded-[8px] shadow-2xl'>
           <SlScreenDesktop className='text-[2.2em]' />
           <h1 className='text-[2em]'>Parents And Careers</h1>
           <p className='text-[1.2em] w-[300px]'>Careers in education are diverse and offer numerous opportunities for individuals passionate about teaching, learning, and contributing to the academic and personal growth of others.</p>

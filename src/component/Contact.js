@@ -67,15 +67,15 @@ const Contact = () => {
           
           <h1 className='text-[.8em] md:text-[1.3em] text-white' >Name*</h1>
           <div className='flex flex-col md:flex-row  justify-start gap-5'>
-          <input id='firstname' name='firstname' onChange={handleChange} placeholder="First Name" className='rounded-[4px] w-[280px] md:w-[220px] bg-white p-2 placeholder-blue-700 font-semibold' type="text" />
-          <input id='lastname' name='lastname'  onChange={handleChange} placeholder="Last Name" className='rounded-[4px] w-[280px] md:w-[220px] bg-white p-2 placeholder-blue-700 font-semibold' type="text" />
+          <input id='firstname' name='firstname' onChange={handleChange} placeholder="First Name" className='rounded-[4px] w-[280px] md:w-[220px] bg-white p-2 placeholder:text-sm placeholder-blue-700 font-semibold' type="text"  />
+          <input id='lastname' name='lastname'  onChange={handleChange} placeholder="Last Name" className='rounded-[4px] w-[280px] md:w-[220px] bg-white p-2 placeholder:text-sm placeholder-blue-700 font-semibold' type="text" />
           </div>
           <h1 className='text-[.8em] md:text-[1.3em] text-white'>Email*</h1>
-          <input name='email' id='email' placeholder="Email"  onChange={handleChange} className='rounded-[4px] w-[280px] md:w-[465px] bg-white p-2 placeholder-blue-700 font-semibold' type="email" />
+          <input name='email' id='email' placeholder="Email"  onChange={handleChange} className='rounded-[4px] w-[280px] md:w-[465px] bg-white p-2 placeholder:text-sm placeholder-blue-700 font-semibold' type="email" />
           <h1 className='text-[.8em] md:text-[1.3em] text-white'>Contact*</h1>
-          <input id='contact' name='contact' placeholder="Contact"  onChange={handleChange} className='rounded-[4px] w-[280px] md:w-[465px] bg-white p-2 placeholder-blue-700 font-semibold' type="text" />
+          <input id='contact' name='contact' placeholder="Contact"  onChange={handleChange} className='rounded-[4px] w-[280px] md:w-[465px] bg-white p-2 placeholder:text-sm placeholder-blue-700 font-semibold' type="text" />
           <h1 className='text-[.8em] md:text-[1.3em] text-white'>Comment Or Message</h1>
-          <textarea id='message' name='message' placeholder="Write your feedback "  onChange={handleChange} className=' p-2 rounded-[4px] resize-none w-[280px] md:w-[465px] h-[120px] text-start placeholder-blue-700 font-semibold' type="Text" />
+          <textarea id='message' name='message' placeholder="Write your feedback "  onChange={handleChange} className=' p-2 rounded-[4px] resize-none w-[280px] md:w-[465px] h-[120px] text-start placeholder:text-sm  placeholder-blue-700 font-semibold' type="Text" />
           <button type='submit' className='bg-white mt-2 p-3 w-28 text-blue-700 rounded-3xl font-semibold '>Submit</button>
           </div>
           {errors.length > 0 && (

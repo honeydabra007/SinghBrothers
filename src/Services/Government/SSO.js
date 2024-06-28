@@ -44,13 +44,13 @@ const SSO = () => {
        {
         img:'/Hawamahal.jpg',
         title:'Licensing and Registration',
-        description:'Licensing and registration services facilitate legal permissions and formalities for businesses and individuals, ensuring compliance with regulations. They streamline processes for permits, certifications, and registrations, supporting economic activities while maintaining regulatory standards and promoting accountability in various sectors',
+        description:'Licensing and registration are critical processes that enforce legal compliance, verify qualifications, and grant permissions for activities such as business operations, professional practice, and intellectual property use, ensuring regulatory adherence and safeguarding public interests',
         details:['SSO Account Creation','Login','Profile Update','Service Selection','Application Form','Document Upload','Fee Payment','Submission','Status Tracking','Approval and Issuance']
        },
        {
         img:'/Hawamahal.jpg',
         title:'Education and Employment',
-        description:'Education and Employment services in SSO (Single Sign-On) facilitate access to educational resources, job listings, and career development tools, offering a centralized platform for managing educational credentials and employment opportunities',
+        description:'Education and Employment services in SSO facilitate access to educational resources, job listings, and career development tools, offering a centralized platform for managing educational credentials and employment opportunities',
         details:['SSO Account Creation','Login','Profile Setup','Education Services','Job Search','Resume Management','Career Counseling','Skill Development','Networking','Notifications']
        },
        {
@@ -70,13 +70,13 @@ const SSO = () => {
        {
         img:'/Hawamahal.jpg',
         title:'Government Financial Services',
-        description:'Government Financial Services via SSO streamline access to taxation, budgeting, grants, and financial aid applications, offering a unified platform for citizens and businesses to manage financial transactions and regulatory compliance efficiently',
+        description:'Government financial services oversee public funds, taxation, and economic policies, ensuring fiscal stability and funding essential for infrastructure and social welfare programs, crucial for national development.',
         details:['SSO Account Creation','Login','Profile Setup','Service Selection','Taxation','Budgeting','Grants and Financial Aid','Payment:','Status Tracking','Notifications']
        },
        {
         img:'/Hawamahal.jpg',
         title:'IT Services',
-        description:'Information Technology Services through SSO streamline access to digital infrastructure, cybersecurity measures, software applications, and technical support, enhancing efficiency and security in managing IT resources centrally',
+        description:'IT services encompass a range of technological solutions and support, including software development, network administration, cybersecurity, and tech support, crucial for optimizing business operations, enhancing communication, and ensuring data security and efficiency',
         details:['SSO Account Creation','Login','Profile Setup','Service Selection','Digital Infrastructure','Cybersecurity','Software Applications','Technical Support','Data Management','Notifications']
        },
        

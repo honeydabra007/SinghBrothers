@@ -52,7 +52,7 @@ const NagarNigam = () => {
        {
         img:'/Alberthall1.jpg',
         title:'Urban Development Tax(UDT)',
-        description:'Urban Development Tax is levied by Nagar Nigam on properties within its jurisdiction to fund city infrastructure projects and services, based on property valuation and supporting urban growth and development',
+        description:'Urban Development Tax (UDT) is a municipal levy funding infrastructure and services in cities. It supports urban growth, improves living standards, and enhances public amenities crucial for sustainable development and community welfare',
       
         details:['Assessment','Calculation','Payment','Submission','Receipt','Verification','Compilance']
 

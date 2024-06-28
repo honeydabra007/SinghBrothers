@@ -38,7 +38,7 @@ const Raj = () => {
        {
         img:'/government.jpg',
         title:'Education Services',
-        description:'Education services in Rajasthan encompass government schools, colleges, vocational training, scholarships, and educational aid, fostering learning opportunities and skill development for all residents',
+        description:'Education services provide diverse learning opportunities, from traditional classrooms to online platforms, aiming to equip learners with knowledge and skills for personal growth and societal advancement through effective teaching and technology',
         details:['Government Schools and Colleges','Scholarships and Educational Aid','Vocational Training Programs']
        },
        {
@@ -50,7 +50,7 @@ const Raj = () => {
        {
         img:'/government.jpg',
         title:'Agriculture and Rural Development',
-        description:'Agriculture and rural development in Rajasthan include subsidies, loans, and schemes for farmers, rural employment programs like MNREGA, and irrigation projects, aiming to boost agricultural productivity and improve rural livelihoods',
+        description:'Agriculture and rural development involve sustainable farming practices, infrastructure development, and community empowerment to enhance food security, economic growth, and quality of life in rural areas through innovative technologies and policies',
         details:['Agricultural Subsidies and Loans','Rural Employment Schemes (MNREGA)','Irrigation Projects']
        },
        {

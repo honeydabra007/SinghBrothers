@@ -30,34 +30,34 @@ const HeritageInfoBox = ({ title, description, details, img }) => {
 const Heritage = () => {
     const infoBoxes = [
         {
-            img: '/patrika2.jpg',
+            img: '/patrika1.jpg',
             title: 'E-Auction',
             description: 'Jaipur Heritage E-auction involves online bidding for historic properties, ensuring transparent transactions and wider participation. It promotes preservation and responsible ownership of Jaipurs cultural heritage under regulatory oversight',
             details: ['Registration','Catalog Access','Pre-Auction Inspection','Bidding','Auction Closure','Payment','Transfer','Documentation','Compilance']
         },
       { 
-        img:'/patrika2.jpg',
+        img:'/patrika1.jpg',
         title:'Jaipur Heritage Lease',
         description:'Leasing Jaipur heritage involves obtaining legal permission for temporary use of culturally significant properties, adhering to preservation guidelines, and ensuring responsible management under municipal regulations for historical conservation',
         details:['Identify Property','Contact Authority','Application','Documentation','Approval Process','Negotiation','Execution','Compliance','Payment','Management']
       },
        
       { 
-        img:'/patrika2.jpg',
+        img:'/patrika1.jpg',
         title:'Trade License',
         description:'Obtaining a trade license for Jaipur heritage involves applying with the municipal authority, submitting required documents, paying fees, and adhering to heritage preservation guidelines to legally operate businesses in culturally significant areas',
         details:['Research','Application','Documentation','Submission','Review','Inspection','Approval','Payment','Issuance','Copilance']
       },
        
       { 
-        img:'/patrika2.jpg',
+        img:'/patrika1.jpg',
         title:'Urban Development Tax',
         description:'Jaipurs Urban Development Tax on heritage properties supports city infrastructure and services. Its based on property valuation and contributes to sustainable urban growth while preserving cultural heritage under municipal guidelines',
         details:['Assessment Notice','Calculate Tax','Payment Options','Submission','Reciept','Varifacation','Compilance']
       },
        
       { 
-        img:'/patrika2.jpg',
+        img:'/patrika1.jpg',
         title:'UDT self-assessment',
         description:'For Jaipur heritage, self-assessment of Urban Development Tax involves calculating tax based on property valuation, completing forms accurately, submitting required documents, and ensuring compliance with Nagar Nigam guidelines for heritage conservation',
         details:['Property Details','Calculate Tax','Online Form','Supporting Documents','Submission','Payment','Confirmation','Follow-Up']

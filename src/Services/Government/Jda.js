@@ -56,7 +56,7 @@ const App = () => {
         {
             img: '/Hawamahal.jpg',
             title: 'JDA Name substitution',
-            description: 'Name substitution in JDA involves replacing a partys name in a Joint Development Agreement, requiring legal review, stakeholder consent, drafting agreements, fee payment, registration,documentation and notification procedures',
+            description: 'JDA (Joint Development Agreement) name substitution refers to the process of replacing or updating the names of parties involved in the agreement due to changes in ownership, legal status, or other relevant circumstances, ensuring contractual accuracy and validity',
             details: ['Review the Original Joint Development Agreement (JDA)', 'Consult with Stakeholders', 'Seek Legal Advice', 'Draft the Name Substitution Agreement', 'Obtain Necessary Consents and Approvals', 'Execute the Name Substitution Agreement', 'Pay Applicable Fees', 'Register the Substitution', 'Amend the Joint Development Agreement (JDA)', 'Notify Relevant Authorities and Parties', 'Final Verification and Documentation']
         },
         {

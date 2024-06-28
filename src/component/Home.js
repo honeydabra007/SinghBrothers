@@ -13,6 +13,10 @@ import { GoPerson } from "react-icons/go";
 import { useState } from 'react';
 import { FiPlus } from "react-icons/fi";
 import { FiMinus } from "react-icons/fi"
+import { TbMessageCircle2 } from "react-icons/tb";
+
+
+
 
 const Homeitem = ({ question, answer }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -32,16 +36,18 @@ const Homeitem = ({ question, answer }) => {
 };
 const Home = () =>{
   return (
-    <div className='font-OpenSans' >
+    <div name="home"  className='font-OpenSans' >
+    
     <section id="home" className="bg-cover bg-center h-screen " style={{ backgroundImage: 'url(/homebg1.jpg)' }}>
     <div className=" mx-auto h-full  flex justify-center items-center text-center ">
         <div className="bg-black bg-opacity-50 p-8 rounded-lg w-full h-full flex flex-col items-center justify-center">
-            <h1 data-aos="zoom-in" className="text-4xl text-white font-bold mb-4">Where Expertise Meets Expediency !</h1>
-            <p data-aos="zoom-in"  className="text-lg text-gray-300">At SinghBrothers we combine our knowledge and quick action to solve problems swiftly. Our services are hassle-free
+            <h1 data-aos="zoom-in" className=" text-xl md:text-4xl text-white font-bold mb-4">Where Expertise Meets Expediency !</h1>
+            <p data-aos="zoom-in"  className="text-sm md:text-lg text-gray-300">At SinghBrothers we combine our knowledge and quick action to solve problems swiftly. Our services are hassle-free
                 and better than the rest, making sure you have the best experience</p>
-            <a href="#services" className="mt-4 inline-block bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700">Our Services</a>
         </div>
     </div>
+    <Link to="/contact"><button  data-aos="fade-right" data-aos-duration="800" className=' text-white flex items-center gap-2 text-[1.2em] mt-5 bg-blue-800 p-3 rounded-[40px] absolute right-0  top-[600px] md:top-[500px] transition-all duration-150 ease-in-out '><TbMessageCircle2 classname="text-center"/> Contact </button></Link>
+   
 </section>
 
 
@@ -50,9 +56,10 @@ const Home = () =>{
 <img className='   h-[300px] md:h-[450px] w-[300px] md:w-[450px] mb-10 md:mb-0 rounded-br-[30px]  rounded-tl-[30px] shadow-xl  shadow-cyan-950 mt-14 object-cover ' src='\side-view-business-man-outdoor.jpg' alt=''/>
 </div>
 <div  data-aos="fade-left" data-aos-easing="linear"  className='mt-14 flex flex-col px-10 md:px-0 font-semibold'>
-<h1 className='text-[3em] text-blue-900'>About Us👋</h1>
+<h1 className=' text-[2em] md:text-[3em] text-blue-900'>About Us👋</h1>
 <p className=' text-[.9em]  md:text-[1.4em] w-auto md:w-[500px] mt-4 font-semibold '>At Singh Brothers, we are dedicated to providing comprehensive services to individuals, businesses, and organizations across various sectors. With a team of experienced professionals and a commitment to excellence, we strive to be your trusted partner in navigating the complexities of today’s ever-changing landscape</p>
 </div>
+
   
 </div>
 <div  className='flex flex-col justify-center items-center mt-6 '>
@@ -62,31 +69,31 @@ const Home = () =>{
 <MdCastForEducation  className="text-[2.8em]"/>
 <h1 className="text-sky-900  text-[1.6em] mt-4 font-bold">Education Service</h1>
 <p className='mt-4'>This company is a premier provider of comprehensive education consulting services, committed to empowering individuals, educational institutions, and organizations to achieve their academic goals and maximize their potential</p>
-<button className='bg-white rounded-3xl flex justify-between items-center m-auto w-[200px] mt-2 p-4'>Get More Details<Link to="/edu"><PiArrowRightLight className='animate-ping' /></Link></button>
+<Link to="/edu"><button className='bg-white rounded-full flex  hover:bg-blue-700 hover:text-white transition-all duration-200 ease-in-out hover:scale-110 hover:shadow-lg hover:shadow-blue-600 justify-between items-center w-[150px] text-[.8em] mt-8 p-4'>Get More Details<PiArrowRightLight className='animate-ping' /></button></Link>
 </div>
 <div data-aos="fade-up"  data-aos-duration="700" className=' w-[300px] md:w-[400px] bg-blue-200 p-8 shadow-lg shadow-cyan-950 rounded-br-[30px]  rounded-tl-[30px] '>
 <MdRealEstateAgent  className="text-[2.8em]"/>
 <h1 className="text-sky-900 mt-4 text-[1.6em] font-bold">Real Estate and Property Law</h1>
 <p className='mt-4'>We offer legal support and guidance on real estate transactions, property acquisitions, leasing agreements, land use regulations, zoning issues, and property disputes to clients involved in the real estate sector.</p>
-<button className='bg-white rounded-3xl flex justify-between m-auto items-center w-[200px] mt-2 p-4'>Get More Details<Link to="/edu"><PiArrowRightLight className='animate-ping' /></Link></button>
+<Link to="/real"><button className='bg-white rounded-full flex  hover:bg-blue-700 hover:text-white transition-all duration-200 ease-in-out hover:scale-110 hover:shadow-lg hover:shadow-blue-600 justify-between items-center w-[150px] text-[.8em] mt-5 p-4'>Get More Details<PiArrowRightLight className='animate-ping' /></button></Link>
 </div>
 <div data-aos="fade-up"  data-aos-duration="800" className=' w-[300px] md:w-[400px] bg-blue-200 p-8 shadow-lg shadow-cyan-950 rounded-br-[30px]  rounded-tl-[30px] '>
 <MdCorporateFare  className="text-[2.8em]"/>
 <h1 className="text-sky-900  mt-4 text-[1.6em] font-bold">Government Corporate</h1>
 <p className='mt-4'>Our company is a trusted provider of government corporate services with specialized legal consultancy, dedicated to assisting government agencies, public sector organizations, and corporate entities in navigating complex legal and regulatory landscapes.</p>
-<button className='bg-white rounded-3xl flex m-auto justify-between items-center w-[200px] mt-2 p-4'>Get More Details<Link to="/edu"><PiArrowRightLight className='animate-ping' /></Link></button>
+<Link to="/gov"><button className='bg-white rounded-full flex  hover:bg-blue-700 hover:text-white transition-all duration-200 ease-in-out hover:scale-110 hover:shadow-lg hover:shadow-blue-600 justify-between items-center w-[150px] text-[.8em] mt-3 p-4'>Get More Details<PiArrowRightLight className='animate-ping' /></button></Link>
 </div>
 <div data-aos="fade-up"  data-aos-duration="900" className=' w-[300px] md:w-[400px] bg-blue-200 p-8 shadow-lg shadow-cyan-950 rounded-br-[30px]  rounded-tl-[30px] '>
 <MdHealthAndSafety  className="text-[2.8em]"/>
 <h1 className="text-sky-900 text-[1.6em] mt-4 font-bold">Healthcare Law and Regulatory Compliance</h1>
 <p className='mt-4'>Providing legal guidance to healthcare providers, pharmaceutical companies, and medical device manufacturers on regulatory compliance. Assisting with healthcare licensing, accreditation, reimbursement, and fraud and abuse prevention</p>
-<button className='bg-white rounded-3xl flex m-auto justify-between items-center w-[200px] mt-2 p-4'>Get More Details<Link to="/edu"><PiArrowRightLight className='animate-ping' /></Link></button>
+<Link to="/bank"><button className='bg-white rounded-full flex  hover:bg-blue-700 hover:text-white transition-all duration-200 ease-in-out hover:scale-110 hover:shadow-lg hover:shadow-blue-600 justify-between items-center w-[150px] text-[.8em] mt-6 p-4'>Get More Details<PiArrowRightLight className='animate-ping' /></button></Link>
 </div>
 <div data-aos="fade-up"  data-aos-duration="1000" className=' w-[300px] md:w-[400px] bg-blue-200 p-8 shadow-lg shadow-cyan-950 rounded-br-[30px]  rounded-tl-[30px] '>
 <BsBank2  className="text-[2.8em]"/>
 <h1 className="text-sky-900 text-[1.6em] mt-4 font-bold">Banking & Finance</h1>
 <p className='mt-4'>This company is a leading provider of comprehensive banking and finance services, dedicated to delivering tailored financial solutions and expertise to individuals, businesses, and institutions.</p>
-<button className='bg-white rounded-3xl flex m-auto justify-between items-center w-[200px] mt-2 p-4'>Get More Details<Link to="/edu"><PiArrowRightLight className='animate-ping' /></Link></button>
+<Link to="/law"><button className='bg-white rounded-full flex  hover:bg-blue-700 hover:text-white transition-all duration-200 ease-in-out hover:scale-110 hover:shadow-lg hover:shadow-blue-600 justify-between items-center w-[150px] text-[.8em] mt-20 p-4'>Get More Details<PiArrowRightLight className='animate-ping' /></button></Link>
 </div>
 </div>
 </div>
@@ -151,7 +158,7 @@ HR management is about hiring, training, and retaining employees</p>
 </div>
 </div>
 <div className=" max-w-5xl mx-auto mt-14">
-<h2 className="mb-8 text-xl md:text-3xl font-semibold font-Poppins text-center text-gray-800">Frequently Asked Questions</h2>
+<h2 className="mb-8 text-xl md:text-full font-semibold font-Poppins text-center text-gray-800">Frequently Asked Questions</h2>
 <div>
   <Homeitem
     question="How do you tailor your consulting approach to different industries?"

@@ -10,20 +10,20 @@ const HighCourtInfoBox = ({ title, description, details, img }) => {
 
     return (
         <div className="p-4  bg-white font-OpenSans border  border-gray-300 w-[300px] md:w-[400px] rounded-xl shadow-2xl transition-all">
-            <div className="mb-2">
-                <img src={img} alt={title} className="w-full h-56 object-cover rounded-md" />
-            </div>
-            <h3 className="text-2xl font-bold mb-2">{title}</h3>
-            <p className="text-gray-700 text-lg mb-2">{description}</p>
-            <details className={`cursor-pointer ${isOpen ? 'open' : ''}`} open={isOpen} onToggle={toggleDetails}>
-                <summary className="text-orange-600">Read more</summary>
-                <ol className="text-gray-700 mt-2 px-4 list-disc flex flex-col gap-2">
-                    {details.map((detail, index) => (
-                        <li key={index}>{detail}</li>
-                    ))}
-                </ol>
-            </details>
-        </div>
+        <div className="mb-2">
+        <img src={img} alt={title} className="w-full h-56 object-cover rounded-md" />
+    </div>
+    <h3 className="text-2xl font-bold mb-2">{title}</h3>
+    <p className="text-gray-700 text-lg mb-2">{description}</p>
+    <details className={`cursor-pointer ${isOpen ? 'open' : ''}`} open={isOpen} onToggle={toggleDetails}>
+        <summary className="text-orange-600">Read more</summary>
+        <ol className="text-gray-700 mt-2 px-4 list-disc flex flex-col gap-2">
+            {details.map((detail, index) => (
+                <li key={index}>{detail}</li>
+            ))}
+        </ol>
+    </details>
+</div>
     );
 };
 
@@ -32,7 +32,7 @@ const HighCourt = () => {
         {
             img:'/high.jpg',
             title:'Case Filing and Hearing',
-            description:'Case filing and hearing at Rajasthan High Court involves submitting petitions, appeals, and writs for civil, criminal, and constitutional matters. Related work includes legal research, document preparation, and court proceedings management',
+            description:'Case filing involves submitting legal documents to initiate court proceedings, while hearings involve presenting arguments and evidence before a judge to resolve disputes, reach a legal decision, and ensure fair adjudication of the case',
             details:['Legal Consultation','Document Preparation','Filing','Acknowledgment','Case Listing','Court Hearing','Arguments','Judgment','Post-Hearing Procedures']
            },
         {
@@ -56,13 +56,13 @@ const HighCourt = () => {
         {
             img:'/high.jpg',
             title:'Public Interest Litigation (PIL)',
-            description:'Public Interest Litigation (PIL) allows individuals or groups to seek court intervention on matters of public concern, promoting social justice by addressing issues affecting the wider community or vulnerable populations.',
+            description:'Public Interest Litigation (PIL) allows citizens to approach the judiciary directly to seek redressal for violations of public rights or matters of societal importance, ensuring accountability, justice, and the promotion of social welfare through legal intervention',
             details:['Issue Advocacy:','Social Justice','Rights Protection','Judicial Review','Environmental Protection','Human Rights','Policy Influence','Legal Aid','Transparency','Community Advocacy']
            },
         {
             img:'/high.jpg',
             title:'Alternative Dispute Resolution',
-            description:'Alternative Dispute Resolution (ADR) in Rajasthan High Court provides mediation, arbitration, and conciliation as alternatives to litigation, aiming for faster, cost-effective, and mutually agreeable dispute resolution outside formal court proceedings',
+            description:'Alternative Dispute Resolution (ADR) refers to methods like mediation and arbitration used to resolve conflicts outside of court, offering efficient and confidential dispute resolution processes',
             details:['Mediation','Arbitration','Conciliation','Training and Awareness']
         }
     ];

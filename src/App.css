@@ -20,7 +20,13 @@
   display: flex;
  gap:50px;
   animation: marquee 30s linear infinite;
+} 
+@media (max-width: 600px) {
+  .marquee-content {
+    animation: marquee 10s linear infinite;
+  }
 }
+
 
 @keyframes marquee {
   0% {
@@ -39,6 +45,14 @@
   
   margin-right: 1rem; /* add spacing between images */
 }
+@media (max-width: 600px) {
+  .marquee-img {
+    height: 6rem;
+  
+    
+  }
+}
+
 .img{
   box-shadow: 0 20px 40px blue;
 }

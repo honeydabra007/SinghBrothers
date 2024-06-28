@@ -49,13 +49,19 @@ const Footer = () => {
     <div className='flex flex-col px-4 md:px-0 '>
     <h1 className='text-white text-[1.4em]'>Contact Us</h1>
     <div className='flex gap-2  items-center '>
-    <PiPhoneLight className='text-white text-[1.6em]'/>
+    <a href='https://wa.me/7221041071' target="_blank" rel="noopener noreferrer">
+    <PiPhoneLight className='text-white text-[1.6em]' />
+  </a> 
     <p className='text-white text-[1.1em] p-1 ' >+91 7221041071</p>
     </div>
     </div>
     <div className='flex gap-2 items-center'>
+    <a   href='mailto:info@singhbrothers.ltd'>
     <CiMail className='text-white text-[1.6em]'/>
-    <p className='text-white text-[1.2em]'>singhbrothers140620@gmail.com</p>
+    </a>
+    <a   href='mailto:info@singhbrothers.ltd'>
+    <p className='text-white text-[1.2em]'>info@singhbrothers.ltd</p>
+    </a>
     </div>
     
     </div>
