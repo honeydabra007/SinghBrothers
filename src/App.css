@@ -164,6 +164,12 @@
       max-height: 300px;
       overflow-y: auto;
     }
+    @media (max-width: 576px) {
+      .results-list {
+        width: 80%; /* adjust for smaller screens */
+        right: 0px; /* adjust right position for smaller screens */
+      }
+    }
     .search-result {
       padding: 10px 20px;
     }

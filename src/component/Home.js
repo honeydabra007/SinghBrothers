@@ -36,9 +36,9 @@ const Homeitem = ({ question, answer }) => {
 };
 const Home = () =>{
   return (
-    <div name="home"  className='font-OpenSans' >
+    <div  className='font-OpenSans w-full overflow-hidden' >
     
-    <section id="home" className="bg-cover bg-center h-screen " style={{ backgroundImage: 'url(/homebg1.jpg)' }}>
+    <div className=" w-full overflow-hidden bg-cover bg-center h-screen " style={{ backgroundImage: 'url(/homebg1.jpg)' }}>
     <div className=" mx-auto h-full  flex justify-center items-center text-center ">
         <div className="bg-black bg-opacity-50 p-8 rounded-lg w-full h-full flex flex-col items-center justify-center">
             <h1 data-aos="zoom-in" className=" text-xl md:text-4xl text-white font-bold mb-4">Where Expertise Meets Expediency !</h1>
@@ -48,7 +48,7 @@ const Home = () =>{
     </div>
     <Link to="/contact"><button  data-aos="fade-right" data-aos-duration="800" className=' text-white flex items-center gap-2 text-[1.2em] mt-5 bg-blue-800 p-3 rounded-[40px] absolute right-0  top-[600px] md:top-[500px] transition-all duration-150 ease-in-out '><TbMessageCircle2 classname="text-center"/> Contact </button></Link>
    
-</section>
+</div>
 
 
 <div className='flex items-center flex-col-reverse md:flex-row gap-4 md:gap-20  px-0 md:px-40  h-screen md:h-[90vh]'>
