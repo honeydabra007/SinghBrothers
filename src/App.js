@@ -24,6 +24,9 @@ import { SearchResultsList } from "./component/SearchResultsList";
 import Medical from './Services/Government/Medical';
 import Raj from './Services/Government/Raj';
 import HighCourt from './Services/Government/HighCourt';
+import Motion from './Services/Government/Motion';
+
+
 
 
 const App = () => {
@@ -65,6 +68,7 @@ const App = () => {
           <Route path="/medical" element={<Medical />} />
           <Route path="/raj" element={<Raj />} />
           <Route path="/highcourt" element={<HighCourt />} />
+          <Route path="/motion" element={<Motion />} />
         
           
           

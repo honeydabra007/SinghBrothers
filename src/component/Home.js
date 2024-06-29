@@ -10,16 +10,31 @@ import { PiStarHalf } from "react-icons/pi";
 import { FaCoins } from "react-icons/fa";
 import { MdOutlineAlignVerticalBottom } from "react-icons/md";
 import { GoPerson } from "react-icons/go";
-import { useState } from 'react';
+import { useState,useEffect } from 'react';
 import { FiPlus } from "react-icons/fi";
 import { FiMinus } from "react-icons/fi"
 import { TbMessageCircle2 } from "react-icons/tb";
-
+import { motion } from 'framer-motion';
 
 
 
 const Homeitem = ({ question, answer }) => {
   const [isOpen, setIsOpen] = useState(false);
+const [progress, setProgress] = useState(0);
+
+useEffect(() => {
+    const interval = setInterval(() => {
+        setProgress(prevProgress => {
+            const newProgress = prevProgress + 2; // Increment progress by 2% per interval (adjust as desired)
+            if (newProgress >= 85) clearInterval(interval); // Stop when reaching 85%
+            return newProgress;
+        });
+    }, 30); // Decreased interval to 30ms for faster animation
+
+    return () => clearInterval(interval);
+}, []);
+
+  
 
   return (
     <div className="mb-6">
@@ -38,7 +53,7 @@ const Home = () =>{
   return (
     <div  className='font-OpenSans w-full overflow-hidden' >
     
-    <div className=" w-full overflow-hidden bg-cover bg-center h-screen " style={{ backgroundImage: 'url(/homebg1.jpg)' }}>
+    <div className=" w-full overflow-hidden bg-cover bg-center  h-[80vh] md:h-screen" style={{ backgroundImage: 'url(/homebg1.jpg)' }}>
     <div className=" mx-auto h-full  flex justify-center items-center text-center ">
         <div className="bg-black bg-opacity-50 p-8 rounded-lg w-full h-full flex flex-col items-center justify-center">
             <h1 data-aos="zoom-in" className=" text-2xl md:text-4xl text-white font-bold mb-4">Where Expertise Meets Expediency !</h1>
@@ -107,9 +122,9 @@ const Home = () =>{
 
 
 
-<div className="flex flex-col gap-10 card  w-4/5 p-6 m-auto mix-blend-color-burn marquee-container bg-gray-100">
+<div className="flex flex-col gap-10 card  w-[4/5] p-6 m-auto mix-blend-color-burn marquee-container bg-gray-100">
 <div className='flex items-center justify-center flex-col'>
-<h1 className=' text-[1em] md:text-[2em] text-center'>We provide services related to these Government Authorities</h1>
+<h1 className=' text-[.7em] md:text-[2em]  text-center'>We provide services related to these Government Authorities</h1>
 
 </div>
 <div className="marquee-content ">

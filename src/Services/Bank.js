@@ -48,7 +48,7 @@ const Bank = () => {
 
           <div className='flex gap-4 justify-center  flex-wrap p-3 md:p-6 h-auto  '>
             <div className='flex flex-col md:flex-row gap-4 bg-gray-100' >
-              <div data-aos="fade-right" className=' rounded-lg shadow-2xl mt-6 flex flex-col gap-4  bg-white text-black w-[320px] md:w-[600px] h-auto md:h-[55vh] justify-between p-4'>
+              <div data-aos="fade-right" className=' rounded-lg shadow-2xl mt-6 flex flex-col gap-4  bg-white text-black w-[320px] md:w-[600px] h-auto md:h-[50vh] justify-between p-4'>
                 <div className='flex flex-col gap-8'>
                   <p className=' text-[1.4em] md:text-[2em] text-start'>Personal Financial Planning</p>
                   <p className='text-[.9em] md:text-[1.2em]'>
@@ -61,7 +61,7 @@ const Bank = () => {
                 </div>
 
               </div>
-              <div data-aos="fade-left" className=' rounded-lg shadow-2xl mt-6 flex flex-col gap-4 text-black w-[320px] md:w-[600px] h-auto md:h-[55vh] justify-between p-4'>
+              <div data-aos="fade-left" className=' rounded-lg shadow-2xl mt-6 flex flex-col gap-4 text-black w-[320px] md:w-[600px] h-auto md:h-[50vh] justify-between p-4'>
                 <div className='flex flex-col gap-8'>
                   <p className='text-[1.4em] md:text-[2em] text-start '>Investment Management</p>
                   <p className='text-[.9em] md:text-[1.2em]'>Investment management involves handling securities and assets to achieve investment goals. It includes portfolio creation, analysis, and rebalancing. The aim is to maximize returns and minimize risks based on the investor's financial objectives and risk tolerance</p>
@@ -74,7 +74,7 @@ const Bank = () => {
               </div>
             </div>
             <div className='flex flex-col md:flex-row gap-4 bg-gray-100'>
-              <div data-aos="fade-right" className=' rounded-lg shadow-2xl mt-6 flex flex-col  gap-4 bg-white text-black w-[320px] md:w-[600px] h-auto md:h-[55vh] justify-between p-4'>
+              <div data-aos="fade-right" className=' rounded-lg shadow-2xl mt-6 flex flex-col  gap-4 bg-white text-black w-[320px] md:w-[600px] h-auto md:h-[50vh] justify-between p-4'>
                 <div className='flex flex-col gap-8'>
                   <p className='text-[1.4em] md:text-[2em] text-start'>Retirement Planning</p>
                   <p className='text-[.9em] md:text-[1.2em]'>
@@ -86,7 +86,7 @@ const Bank = () => {
                   </Link>
                 </div>
               </div>
-              <div data-aos="fade-left" className=' rounded-lg shadow-2xl mt-6 flex flex-col gap-2  text-black w-[320px] md:w-[600px] h-auto md:h-[55vh] justify-between p-4'>
+              <div data-aos="fade-left" className=' rounded-lg shadow-2xl mt-6 flex flex-col gap-2  text-black w-[320px] md:w-[600px] h-auto md:h-[50vh] justify-between p-4'>
                 <div className='flex flex-col gap-8'>
                   <p className='text-[1.4em] md:text-[2em] text-start'>Tax Advisory</p>
                   <p className='text-[.9em] md:text-[1.2em]'>
@@ -99,8 +99,8 @@ const Bank = () => {
                 </div>
               </div>
             </div>
-            <div className='flex gap-4'>
-              <div data-aos="fade-right" className='  rounded-lg shadow-2xl mt-6 flex flex-col gap-4 bg-white text-black   w-[320px] md:w-[600px] h-auto md:h-[55vh] justify-between p-4'>
+            <div className='flex flex-col md:flex-row gap-4 bg-gray-100'>
+              <div data-aos="fade-right" className='  rounded-lg shadow-2xl mt-6 flex flex-col gap-4 bg-white text-black   w-[320px] md:w-[600px] h-auto md:h-[50vh] justify-between p-4'>
                 <div className='flex flex-col gap-8'>
                   <p className='text-[1.4em] md:text-[2em] text-start'>Estate Planning</p>
                   <p className=' text-[.9em] md:text-[1.2em]'>
@@ -112,7 +112,7 @@ const Bank = () => {
                   </Link>
                 </div>
               </div>
-              <div data-aos="fade-right" className='  rounded-lg shadow-2xl mt-6 flex flex-col gap-4 bg-white text-black   w-[320px] md:w-[600px] h-auto md:h-[55vh] justify-between p-4'>
+              <div data-aos="fade-left" className='  rounded-lg shadow-2xl mt-6 flex flex-col gap-4 bg-white text-black   w-[320px] md:w-[600px] h-auto md:h-[50vh] justify-between p-4'>
                 <div className='flex flex-col gap-8'>
                   <p className='text-[1.4em] md:text-[2em] text-start'>Life Insurence</p>
                   <p className=' text-[.9em] md:text-[1.2em]'>Life insurance provides financial protection to beneficiaries upon the policyholder's death. It involves paying premiums in exchange for a death benefit. The goal is to ensure financial security for loved ones, covering expenses like debts, education, and living costs</p>
@@ -124,8 +124,8 @@ const Bank = () => {
                 </div>
               </div>
             </div>
-            <div className='flex gap-4'>
-              <div data-aos="fade-right" className='  rounded-lg shadow-2xl mt-6 flex flex-col gap-4 bg-white text-black   w-[320px] md:w-[600px] h-auto md:h-[55vh] justify-between p-4'>
+            <div className='flex flex-col md:flex-row gap-4 bg-gray-100'>
+              <div data-aos="fade-right" className='  rounded-lg shadow-2xl mt-6 flex flex-col gap-4 bg-white text-black   w-[320px] md:w-[600px] h-auto md:h-[50vh] justify-between p-4'>
                 <div className='flex flex-col gap-8'>
                   <p className='text-[1.4em] md:text-[2em] text-start'>Health Insurence</p>
                   <p className=' text-[.9em] md:text-[1.2em]'>
@@ -137,7 +137,7 @@ const Bank = () => {
                   </Link>
                 </div>
               </div>
-              <div data-aos="fade-right" className='  rounded-lg shadow-2xl mt-6 flex flex-col gap-4 bg-white text-black   w-[320px] md:w-[600px] h-auto md:h-[55vh] justify-between p-4'>
+              <div data-aos="fade-left" className='  rounded-lg shadow-2xl mt-6 flex flex-col gap-4 bg-white text-black   w-[320px] md:w-[600px] h-auto md:h-[50vh] justify-between p-4'>
                 <div className='flex flex-col gap-8'>
                   <p className='text-[1.4em] md:text-[2em] text-start'>Wealth Insurence</p>
                   <p className=' text-[.9em] md:text-[1.2em]'>Wealth insurance safeguards an individual's financial assets against potential losses. It involves comprehensive coverage plans that protect investments, property, and other high-value assets. The goal is to ensure financial stability and security, preserving wealth for future generations and unforeseen circumstances</p>
@@ -150,7 +150,7 @@ const Bank = () => {
               </div>
             </div>
             <div>
-              <div data-aos="fade-right" className='  rounded-lg shadow-2xl mt-6 flex flex-col gap-4 bg-white text-black   w-[320px] md:w-[600px] h-auto md:h-[55vh] justify-between p-4'>
+              <div data-aos="fade-right" className='  rounded-lg shadow-2xl mt-6 flex flex-col gap-4 bg-white text-black   w-[320px] md:w-[600px] h-auto md:h-[50vh] justify-between p-4'>
                 <div className='flex flex-col gap-8'>
                   <p className='text-[1.4em] md:text-[2em] text-start'>Car Insurence</p>
                   <p className=' text-[.9em] md:text-[1.2em]'>

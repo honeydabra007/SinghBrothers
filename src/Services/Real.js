@@ -42,7 +42,7 @@ const Real = () =>{
               <p className='text-[.9em] md:text-[1.2em]'>Drafting and reviewing purchase and sale agreements, conducting title searches, and managing the closing process for seamless property transfers.</p>
               </div>
                 <div className=' pt-0 md:pt-10'>
-                <Link to='/contact'>
+                <Link to='/motion'>
                 <button className='bg-blue-500 h-[40px] w-[180px]  text-white   rounded-[40px]  m-auto  font-semibold'> Get Details</button>
                 </Link>
                 </div>

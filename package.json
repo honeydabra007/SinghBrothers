@@ -11,6 +11,7 @@
     "config": "^3.3.11",
     "dotenv": "^16.4.5",
     "eslint": "^8.57.0",
+    "framer-motion": "^11.2.12",
     "parse": "^5.1.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
