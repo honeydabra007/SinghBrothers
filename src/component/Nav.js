@@ -46,8 +46,8 @@ const Nav = ({ setResults }) => {
   };
 
     return (
-        <div className='relative'>
-            <div className='flex w-[360px] md:w-auto justify-around p-0 md:p-3 mt-4 md:mt-0 shadow-sm    '>
+        <div className='relative '>
+            <div className='flex w-84 md:w-auto justify-around p-0 md:p-3 mt-4 md:mt-0 shadow-sm    '>
             
                 <div className=''>
                    <Link to='/'>
@@ -60,13 +60,13 @@ const Nav = ({ setResults }) => {
                 id="navbar-cta"
               >
                 <Link to="/">
-                  <p className="border-none md:hover:border-y-2 md:hover:border-t-0 md:hover:border-b-blue-400 h-[50px] block mt-0 md:mt-2 py-2 md:py-0 md:px-4">Home</p>
+                  <p className="block mt-0 md:mt-2 py-2 md:py-0 md:px-4">Home</p>
                 </Link>
                 <Link to="/about">
-                  <p className="block border-none md:hover:border-y-2 md:hover:border-t-0 md:hover:border-b-blue-400 h-[50px] mt-0 md:mt-2 py-2 md:py-0 md:px-4">About Us</p>
+                  <p className="block  mt-0 md:mt-2 py-2 md:py-0 md:px-4">About Us</p>
                 </Link>
                 <Link to="/do">
-                  <p className="block border-none md:hover:border-y-2 md:hover:border-t-0 md:hover:border-b-blue-400 h-[50px] mt-0 md:mt-2 py-2 md:py-0 md:px-4">What We Do</p>
+                  <p className="block  mt-0 md:mt-2 py-2 md:py-0 md:px-4">What We Do</p>
                 </Link>
              
               <div className='group '>
@@ -103,9 +103,9 @@ const Nav = ({ setResults }) => {
                 </div>
                 <div className="md:hidden ">
                 {isClick ? (
-                  <RxCross1 onClick={handleToggle} className="text-[1.4em] text-gray-700 cursor-pointer mt-6 mr-6" />
+                  <RxCross1 onClick={handleToggle} className="text-[1.4em] text-gray-700 cursor-pointer mt-6 mr-4" />
                 ) : (
-                  <RxHamburgerMenu onClick={handleToggle} className=" text-[1.4em] text-gray-700  cursor-pointer mt-6 mr-6" />
+                  <RxHamburgerMenu onClick={handleToggle} className=" text-[1.4em] text-gray-700  cursor-pointer mt-6 mr-4" />
                 )}
               </div>
 

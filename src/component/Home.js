@@ -41,7 +41,7 @@ const Home = () =>{
     <div className=" w-full overflow-hidden bg-cover bg-center h-screen " style={{ backgroundImage: 'url(/homebg1.jpg)' }}>
     <div className=" mx-auto h-full  flex justify-center items-center text-center ">
         <div className="bg-black bg-opacity-50 p-8 rounded-lg w-full h-full flex flex-col items-center justify-center">
-            <h1 data-aos="zoom-in" className=" text-xl md:text-4xl text-white font-bold mb-4">Where Expertise Meets Expediency !</h1>
+            <h1 data-aos="zoom-in" className=" text-2xl md:text-4xl text-white font-bold mb-4">Where Expertise Meets Expediency !</h1>
             <p data-aos="zoom-in"  className="text-sm md:text-lg text-gray-300">At SinghBrothers we combine our knowledge and quick action to solve problems swiftly. Our services are hassle-free
                 and better than the rest, making sure you have the best experience</p>
         </div>
@@ -51,11 +51,11 @@ const Home = () =>{
 </div>
 
 
-<div className='flex items-center flex-col-reverse md:flex-row gap-4 md:gap-20  px-0 md:px-40  h-screen md:h-[90vh]'>
+<div className='flex items-center flex-col-reverse md:flex-row gap-4 md:gap-20  px-0 md:px-40  h-auto md:h-[90vh]'>
 <div data-aos="fade-right" data-aos-easing="linear" data-aos-duration="800" >
-<img className='   h-[300px] md:h-[450px] w-[300px] md:w-[450px] mb-10 md:mb-0 rounded-br-[30px]  rounded-tl-[30px] shadow-xl  shadow-cyan-950 mt-14 object-cover ' src='\side-view-business-man-outdoor.jpg' alt=''/>
+<img className='   h-[300px] md:h-[450px] w-[300px] md:w-[450px] mb-10 md:mb-0 rounded-br-[30px]  rounded-tl-[30px] shadow-xl  shadow-cyan-950 mt-4 md:mt-14 object-cover ' src='\side-view-business-man-outdoor.jpg' alt=''/>
 </div>
-<div  data-aos="fade-left" data-aos-easing="linear"  className='mt-14 flex flex-col px-10 md:px-0 font-semibold'>
+<div  data-aos="fade-left" data-aos-easing="linear"  className='  mt-12 md:mt-14 flex flex-col px-10 md:px-0 font-semibold'>
 <h1 className=' text-[2em] md:text-[3em] text-blue-900'>About Us👋</h1>
 <p className=' text-[.9em]  md:text-[1.4em] w-auto md:w-[500px] mt-4 font-semibold '>At Singh Brothers, we are dedicated to providing comprehensive services to individuals, businesses, and organizations across various sectors. With a team of experienced professionals and a commitment to excellence, we strive to be your trusted partner in navigating the complexities of today’s ever-changing landscape</p>
 </div>
