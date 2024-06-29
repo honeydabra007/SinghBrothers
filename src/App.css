@@ -16,17 +16,16 @@
   white-space: nowrap;
 }
 
-.marquee-content {
-  display: flex;
- gap:50px;
-  animation: marquee 30s linear infinite;
-} 
-@media (max-width: 600px) {
-  .marquee-content {
-    animation: marquee 10s linear infinite;
-  }
+.marquee-container {
+  overflow: hidden;
+  white-space: nowrap;
 }
 
+.marquee-content {
+  display: flex;
+  gap: 50px;
+  animation: marquee 30s linear infinite;
+}
 
 @keyframes marquee {
   0% {
@@ -38,20 +37,56 @@
 }
 
 .marquee-img {
-  height: 10rem; /* equivalent to h-40 in Tailwind */
-  width: 10rem; /* equivalent to w-40 in Tailwind */
+  height: 30vh; /* height relative to viewport height */
+  width: 10vw; /* width relative to viewport width */
   object-fit: contain;
   display: inline-block;
-  
   margin-right: 1rem; /* add spacing between images */
 }
-@media (max-width: 600px) {
+
+/* Media queries for responsiveness */
+@media (max-width: 1200px) {
   .marquee-img {
-    height: 6rem;
-  
-    
+    height: 25vh; /* adjust for smaller screens */
+    width: 15vw; /* adjust for smaller screens */
+  }
+  .marquee-content {
+    gap: 40px;
+    animation: marquee 15s linear infinite;
+     
   }
 }
+
+@media (max-width: 992px) {
+  .marquee-img {
+    height: 20vh; /* adjust for smaller screens */
+    width: 20vw; /* adjust for smaller screens */
+  }
+  .marquee-content {
+    gap: 30px; /* adjust gap for smaller screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .marquee-img {
+    height: 15vh; /* adjust for smaller screens */
+    width: 25vw; /* adjust for smaller screens */
+  }
+  .marquee-content {
+    gap: 20px; /* adjust gap for smaller screens */
+  }
+}
+
+@media (max-width: 576px) {
+  .marquee-img {
+    height: 10vh; /* adjust for smaller screens */
+    width: 30vw; /* adjust for smaller screens */
+  }
+  .marquee-content {
+    gap: 10px; /* adjust gap for smaller screens */
+  }
+}
+
 
 .img{
   box-shadow: 0 20px 40px blue;
