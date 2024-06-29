@@ -255,38 +255,3 @@ export default Home
 
 
 
-// <div className='  border-r-8 	 absolute top-20   w-[350px]  left-0 bg-white p-5 text-blue-500  border-none group-hover:block '>
-//                             <ul className=' flex gap-6 flex-col'>
-//                                 <div className='flex relative group'>
-//                                     <div className='w-[320px]'>
-//                                         <li className='flex justify-between items-center  '>Overview<IoIosArrowForward /></li>
-//                                     </div>
-//                                     <div className=' hidden  absolute left-[314px]  bg-white w-[900px] px-16  h-64  group-hover:block '>
-//                                         <h1>Honey Dabra</h1>
-//                                         <p>Honey Dabra</p>
-//                                         <button>Honey</button>
-//                                     </div>
-//                                 </div>
-//                                 <div className='flex relative group'>
-                                    
-//                                         <li className='flex justify-between items-center'>industries<IoIosArrowForward />
-                                    
-                                    
-//                                  <div className=' hidden  absolute left-[314px]  bg-white w-[900px] px-16   h-64  group-hover:block '>
-//                                      <h1>Honey Dabra</h1>
-//                                        <p>Honey Dabra</p>
-//                                     <button>Honey</button>
-//                                      </div>
-                                    
-//                                     </li>
-//                                 </div>
-//                                 <li className='flex justify-between items-center' >Services<IoIosArrowForward /></li>
-//                                 <li className='flex justify-between items-center' >Product & Platform<IoIosArrowForward /></li>
-//                                 <li className='flex justify-between items-center'>Research & Innovation<IoIosArrowForward /></li>
-//                             </ul>
-
-
-//                         </div>
-
-
-//                     </div>
