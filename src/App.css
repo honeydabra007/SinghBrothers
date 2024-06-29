@@ -98,26 +98,7 @@
 
 
 
-/* 
-<div className=' hidden border-r-8	 absolute top-20  w-full left-0 bg-white p-4  text-blue-500 rounded-[8px] group-hover:block '>
-    <ul>
-    <li className='  mt-3  flex items-center  '><a href='' className='flex w-[200px] justify-between'>Overview<IoIosArrowForward/></a>
-        <div className='  absolute  top-6 left-[17rem] w-[850px]  '>
-            <h1 className='text-[1.7em]'>TCS is here to make a difference through technology.</h1>
-            <p className='text-[1.1em]'>Leading the way in innovation for over 55 years, we build greater futures for businesses across multiple industries and 55 countries</p>
-            <button className=' text-center rounded-[40px] bg-blue-500 w-[190px]  text-white p-2 text-[.8em] transition-all duration-200 ease-in-out hover:navy'>Discover All solution</button>
-        </div>
-    </li>
-    <li className='mt-3 flex items-center '>Industries<IoIosArrowForward/>
-    
-    </li>
-    <li className='mt-3 flex items-center'>Services<IoIosArrowForward/></li>
-    <li className='mt-3 flex items-center'>Product & Platform<IoIosArrowForward/></li>
-    <li className='mt-3 flex items-center 	'>Research & Innovation<IoIosArrowForward/></li>
-    </ul>
-    
-    
-    </div> */
+
     .input-wrapper {
       width: 50%;
       height: 2.5rem;
@@ -129,6 +110,11 @@
       display: flex;
    
       align-items: center;
+    }
+    @media (max-width: 576px) {
+      .input-wrapper {
+        width: 90%;
+      }
     }
     
     input {
@@ -166,7 +152,8 @@
     }
     @media (max-width: 576px) {
       .results-list {
-        width: 80%; /* adjust for smaller screens */
+        width: 80%;
+         /* adjust for smaller screens */
         right: 0px; /* adjust right position for smaller screens */
       }
     }
