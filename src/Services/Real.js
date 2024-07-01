@@ -93,13 +93,13 @@ const Real = () =>{
       
       <h1 className='text-[.8em] md:text-[1.3em] text-white' >Name*</h1>
      
-      <input id='firstname' name='fullname' onChange={handleChange} placeholder="First Name" className='rounded-[4px] w-[240px] md:w-[400px] bg-white p-2 placeholder:text-sm placeholder-cyan-700 font-semibold' type="text"  />
+      <input id='firstname' name='fullname' onChange={handleChange} placeholder="First Name" className='rounded-[4px] w-[240px] md:w-[400px] bg-white p-2 placeholder:text-sm placeholder-cyan-700 text-black font-semibold' type="text"  />
 
   
       <h1 className='text-[.8em] md:text-[1.3em] text-white'>Contact*</h1>
-      <input id='contact' name='contact' placeholder="Contact"  onChange={handleChange} className='rounded-[4px] w-[240px] md:w-[400px] bg-white p-2 placeholder:text-sm placeholder-cyan-700 font-semibold' type="text" />
+      <input id='contact' name='contact' placeholder="Contact"  onChange={handleChange} className='rounded-[4px] w-[240px] md:w-[400px] bg-white p-2 placeholder:text-sm placeholder-cyan-700 text-black font-semibold' type="text" />
       <h1 className='text-[.8em] md:text-[1.3em] text-white'>Comment Or Message</h1>
-      <textarea id='message' name='message' placeholder="Write your feedback "  onChange={handleChange} className=' p-2 rounded-[4px] resize-none w-[240px] md:w-[400px] h-[120px] text-start placeholder:text-sm  placeholder-cyan-700 font-semibold' type="Text" />
+      <textarea id='message' name='message' placeholder="Write your feedback "  onChange={handleChange} className=' p-2 rounded-[4px] resize-none w-[240px] md:w-[400px] h-[120px] text-start text-black placeholder:text-sm  placeholder-cyan-700 font-semibold' type="Text" />
       <div className='flex gap-2 justify-center items-center mt-1 '>
       <PiLockSimpleFill className='text-white text-[1.2em] text-center' />
       <p className='text-white  text-[.8em] md:text-[1.2em] text-center'>Your Information Safe With Us !</p>

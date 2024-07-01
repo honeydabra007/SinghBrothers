@@ -69,7 +69,7 @@ const Home = () =>{
                 and better than the rest, making sure you have the best experience</p>
         </div>
     </div>
-    <Link to="/contact"><button  data-aos="fade-right" data-aos-duration="800" className=' text-white flex items-center gap-2 text-[1.2em] mt-5 bg-blue-800 p-3 rounded-[40px] absolute right-0  top-[600px] md:top-[500px] transition-all duration-150 ease-in-out '><TbMessageCircle2 classname="text-center"/> Contact </button></Link>
+    <Link to="/contact"><button  data-aos="fade-right" data-aos-duration="800" className=' text-white flex items-center gap-2 text-[1.2em] mt-5 bg-blue-800 p-3 rounded-[40px] absolute right-0  top-[520px] md:top-[500px] transition-all duration-150 ease-in-out '><TbMessageCircle2 classname="text-center"/> Contact </button></Link>
    
 </div>
 
@@ -266,29 +266,31 @@ HR management is about hiring, training, and retaining employees</p>
 </div>
 </div>
 {
+
   
   // {showImage && (
-    //   <motion.div
-    //     className="image-container p-4 rounded-lg shadow-lg absolute top-40 right-[280px] m-4"
-    //     initial={{ opacity: 0 }}
-//     animate={{ opacity: 1 }}
-//     exit={{ opacity: 0 }}
-//     transition={{ duration: 0.3 }}
-//   >
-//     <img
-//       src="/SB-logo-9 (1).png" // Replace with your image path
-//       alt="Ad"
-//       className="h-[380px] w-[750px] rounded-lg"
-//     />
-//     <button
-//       className="close-button absolute top-2 right-2 bg-red-500 text-white rounded-full p-2 hover:bg-red-600 focus:outline-none"
-//       onClick={handleClose}
-//     >
-//       &times;
-//     </button>
-//   </motion.div>
-// )}
-}
+  //     <motion.div
+  //     className="image-container  p-4 rounded-lg shadow-lg absolute top-40 right-2 md:right-[280px] m-4"
+  //       initial={{ opacity: 0 }}
+  //   animate={{ opacity: 1 }}
+  //   exit={{ opacity: 0 }}
+  //   transition={{ duration: 0.3 }}
+  // >
+  //   <img
+  //     src="/SB-logo-9 (1).png" // Replace with your image path
+  //     alt="Ad"
+  //     className="h-[340px] w-full md:w-[750px] rounded-lg"
+  //     />
+  //     <button
+  //     className="close-button absolute top-2 right-2 bg-red-500 text-white rounded-full p-2 hover:bg-red-600 focus:outline-none"
+  //     onClick={handleClose}
+  //     >
+  //     &times;
+  //     </button>
+  //     </motion.div>
+  //   )}
+    
+  }
 
 
     

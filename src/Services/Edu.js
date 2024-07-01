@@ -88,7 +88,7 @@ const Edu = () =>{
       
     />
     <div className='  flex flex-col p-4 md:p-32 gap-4 md:gap-0  absolute top-0 left-0 w-full h-[100vh] text-white' style={{backgroundColor: 'rgba(0, 0, 0, 0.5)' }}>
-    <h1 className=' text-[1.2em] md:text-[2.5em]  px-6 md:px-0 pt-8 md:pt-0'>Learning For A</h1>
+    <h1 className=' text-[1.2em] md:text-[2.5em]  px-6 md:px-0 pt-24 md:pt-0'>Learning For A</h1>
      <p className=' text-[2em] md:text-[5em] w-[300px] px-6 md:px-0 md:w-[500px]'>Better Future</p>
    </div>
 
@@ -112,7 +112,7 @@ const Edu = () =>{
       </div>
 
 
-       <div className='font-OpenSans top-60 md:top-0 absolute md:relative '>
+       <div className='font-OpenSans top-[330px] md:top-0 absolute md:relative '>
       <div className='flex flex-col md:flex-row justify-center gap-8 '>
         <div data-aos="zoom-in" className='px-8 md:px-0 hidden md:block  '>
           <h1 className=' p-2 mt-6  text-[1.2em] md:text-[2.5em] text-cyan-900 font-semibold'>Make An Appointment Here</h1>
