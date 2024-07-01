@@ -84,7 +84,7 @@ const Law= () =>{
       
     />
     <div className='  flex flex-col md:flex-row p-4 md:p-32 gap-8 md:gap-0  absolute top-0 left-0 w-full h-[100vh] text-white' style={{backgroundColor: 'rgba(0, 0, 0, 0.5)' }}>
-    <div className='px-10 md:px-0 pt-6 md:pt-0'>
+    <div className='px-10 md:px-0 pt-4 md:pt-0'>
     <h1 className=' text-[1.5em] md:text-[2.8em] pt-14 md:pt-12'>Healthcare Law Services</h1>
     <p className=' text[.9em] md:text-[1.2em] w-[270px] md:w-[500px]'>Healthcare insurance law encompasses the regulations and legal frameworks governing health insurance policies and practices..</p>
     </div>
