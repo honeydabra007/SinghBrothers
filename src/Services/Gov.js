@@ -4,6 +4,11 @@ import { Link } from 'react-router-dom'
 import { FiPlus } from "react-icons/fi";
 import { FiMinus } from "react-icons/fi"
 import { useState } from 'react';
+import axios from 'axios'
+import { RxCrossCircled } from "react-icons/rx"
+import { LiaCheckDoubleSolid } from "react-icons/lia"
+import { PiLockSimpleFill } from "react-icons/pi";
+
 
 const Govitem = ({ question, answer }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -22,9 +27,56 @@ const Govitem = ({ question, answer }) => {
   );
 };
 const Gov = () =>{
+  const[formData, setFormData] = useState({
+    firstname:'',
+    lastname:'',
+    email:'',
+    contact:'',
+    message:''
+   });
+   const[errors,setErrors] = useState([])
+   const[successMessage, setSuccessMessage] = useState('');
+
+   const handleChange = (e) =>{
+    const {name,value} = e.target;
+    setFormData({
+      ...formData,
+      [name]:value
+    });
+   };
+   const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    try {
+      const response = await axios.post(
+       "http://localhost:8001/contact",
+        formData
+      );
+      console.log(response.data);
+      // Reset form fields after submission
+      setFormData({
+        firstname: '', 
+        lastname:'',
+         email: '',
+         contact:'',
+        message: ''
+      });
+      setErrors([]); // Clear errors if submission is successful
+      setSuccessMessage('Form submitted successfully...'); // Set success message
+    } catch (error) {
+      console.error('Form submission error:', error);
+      if (error.response && error.response.data && error.response.data.msg) {
+        setErrors(error.response.data.msg);
+        setSuccessMessage(''); // Clear success message if there's an error
+      } else {
+        setErrors(['An unexpected error occurred.']);
+        setSuccessMessage(''); // Clear success message if there's an error
+      }
+    }
+  };
   return(
     <div className='font-OpenSans w-full overflow-hidden '>
-    <div  className="relative w-full h-[80vh]">
+    <div  className="relative w-full h-[100vh]">
     <img
       className="object-cover w-full h-full block"
       src={`${process.env.PUBLIC_URL}/modern-mirror-building (1).jpg`}
@@ -32,14 +84,52 @@ const Gov = () =>{
       
     />
     
-    <div className='  flex flex-col p-4 md:p-32 gap-4 md:gap-0  absolute top-0 left-0 w-full h-[80vh] text-white' style={{backgroundColor: 'rgba(0, 0, 0, 0.5)' }}>
-    <h1 className=' text-[1.8em] md:text-[4em] pt-40 md:pt-0'>Government Corporate Service</h1>
-    <p className=' text[.9em] md:text-[1.2em] w-[270px] md:w-[600px]'>Government corporate law encompasses regulations on corporate formation, governance, securities, antitrust, employment, taxation, and intellectual property.</p>
-    <div >
-    <Link to ="/contact">
-    <button className='bg-gradient-to-r from-cyan-500 to-blue-700 h-16 rounded-[40px] w-[140px]   md:w-[200px] mt-4 text-[1.5em]'>Contact Us</button>
-    </Link>
+    <div className='  flex flex-col md:flex-row p-0 md:p-32 gap-6 md:gap-8  absolute top-0 left-0 w-full h-[100vh] text-white' style={{backgroundColor: 'rgba(0, 0, 0, 0.5)' }}>
+    <div className='px-10 md:px-0 pt-6 md:pt-0'>
+    <h1 className=' text-[1.5em] md:text-[2.5em] pt-4 md:pt-12'>Government Corporate Service</h1>
+    <p className=' text[.9em] md:text-[1em] w-[270px] md:w-[600px]'>Government corporate law encompasses regulations on corporate formation, governance, securities, antitrust, employment, taxation, and intellectual property.</p>
     </div>
+    <div className='font-OpenSans '>
+ 
+     
+
+    <div data-aos="fade-up" className='  flex ml-8  flex-col  gap-1 bg-cyan-600 rounded-xl w-[280px] md:w-[475px] h-auto p-4 md:p-8 shadow-2xl'>
+      <h1 className='text-white text-[.9em] md:text-[1.5em]'>Fill The Form For More Details And All the Details Are Mendatory</h1>
+      <form onSubmit={handleSubmit}>
+      <div>
+      
+      <h1 className='text-[.8em] md:text-[1.3em] text-white' >Name*</h1>
+     
+      <input id='firstname' name='fullname' onChange={handleChange} placeholder="First Name" className='rounded-[4px] w-[240px] md:w-[400px] bg-white p-2 placeholder:text-sm placeholder-cyan-700 font-semibold' type="text"  />
+
+  
+      <h1 className='text-[.8em] md:text-[1.3em] text-white'>Contact*</h1>
+      <input id='contact' name='contact' placeholder="Contact"  onChange={handleChange} className='rounded-[4px] w-[240px] md:w-[400px] bg-white p-2 placeholder:text-sm placeholder-cyan-700 font-semibold' type="text" />
+      <h1 className='text-[.8em] md:text-[1.3em] text-white'>Comment Or Message</h1>
+      <textarea id='message' name='message' placeholder="Write your feedback "  onChange={handleChange} className=' p-2 rounded-[4px] resize-none w-[240px] md:w-[400px] h-[120px] text-start placeholder:text-sm  placeholder-cyan-700 font-semibold' type="Text" />
+      <div className='flex gap-4 justify-center items-center mt-1 '>
+      <PiLockSimpleFill className='text-white text-[1.2em] text-center' />
+      <p className='text-white  text-[0.8em] md:text-[1.2em] text-center'>Your Information Safe With Us !</p>
+      
+      </div>
+      <button type='submit' className='bg-white mt-2 p-3 w-28 text-cyan-700 rounded-3xl font-semibold '>Submit</button>
+      </div>
+      {errors.length > 0 && (
+        <div className="mt-4">
+          {errors.map((error, index) => (
+            <p key={index} className="text-red-700 flex items-center gap-1"><RxCrossCircled size={15} />{error}</p>
+          ))}
+        </div>
+      )}
+      {successMessage && (
+        <div className="mt-4">
+          <p className="text-green-700 flex items-center gap-2"><LiaCheckDoubleSolid size={15}/>{successMessage}</p>
+        </div>
+      )}
+      </form>
+    </div>
+    </div>
+    
     </div>
 
     </div>

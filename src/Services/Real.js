@@ -77,56 +77,51 @@ const Real = () =>{
   };
   return(
     <div className='font-OpenSans w-full overflow-hidden '>
-    <div className=' p-5 md:p-[140px] h-auto bg-cover gap-8 flex flex-col md:flex text-white mb-8 md:mb-0 ' style={{ backgroundImage: 'url("/Realstate (1).jpg")' }} >
-    <div className='px-10 md:px-0 pt-12 md:pt-0'>
-    <h1 className=' mt-0 md:mt-20  text-[2em] md:text-[3.8em] '>Real Estate Law</h1>
+    <div className=' p-2 md:p-[140px] h-auto bg-cover gap-8 flex flex-col md:flex-row text-white mb-8 md:mb-0 ' style={{ backgroundImage: 'url("/Realstate (1).jpg")' }} >
+    <div className='px-10 md:px-0 pt-6 md:pt-0'>
+    <h1 className=' mt-0 md:mt-20  text-[1.5em] md:text-[2.5em] '>Real Estate Law</h1>
     <p className='text-[.9em] md:text-[1.5em] w-[260px] md:w-[500px]'>Drafting agreements, managing closings, resolving disputes, and ensuring zoning compliance for smooth property transactions and ownership.</p>
     </div>
     <div className='font-OpenSans '>
  
      
 
-      <div data-aos="fade-up" className='  flex ml-8  flex-col  gap-1 bg-cyan-600 rounded-xl w-[320px] md:w-[475px] h-auto p-4 md:p-8 shadow-2xl'>
-        <h1 className='text-white text-[.9em] md:text-[1.5em]'>Fill The Form For More Details And All the Details Are Mendatory</h1>
-        <form onSubmit={handleSubmit}>
-        <div>
-        
-        <h1 className='text-[.8em] md:text-[1.3em] text-white' >Name*</h1>
-       
-        <input id='firstname' name='fullname' onChange={handleChange} placeholder="First Name" className='rounded-[4px] w-[280px] md:w-[400px] bg-white p-2 placeholder:text-sm placeholder-cyan-700 font-semibold' type="text"  />
-
-    
-        <h1 className='text-[.8em] md:text-[1.3em] text-white'>Contact*</h1>
-        <input id='contact' name='contact' placeholder="Contact"  onChange={handleChange} className='rounded-[4px] w-[280px] md:w-[400px] bg-white p-2 placeholder:text-sm placeholder-cyan-700 font-semibold' type="text" />
-        <h1 className='text-[.8em] md:text-[1.3em] text-white'>Comment Or Message</h1>
-        <textarea id='message' name='message' placeholder="Write your feedback "  onChange={handleChange} className=' p-2 rounded-[4px] resize-none w-[280px] md:w-[400px] h-[120px] text-start placeholder:text-sm  placeholder-cyan-700 font-semibold' type="Text" />
-        <div className='flex gap-4 justify-center items-center mt-1 '>
-        <PiLockSimpleFill className='text-white text-[1.2em] text-center' />
-        <p className='text-white  text-[0.7em ] md:text-[1.2em] text-center'>Your Information Safe With Us !</p>
-        
-        </div>
-        <button type='submit' className='bg-white mt-2 p-3 w-28 text-cyan-700 rounded-3xl font-semibold '>Submit</button>
-        </div>
-        {errors.length > 0 && (
-          <div className="mt-4">
-            {errors.map((error, index) => (
-              <p key={index} className="text-red-700 flex items-center gap-1"><RxCrossCircled size={15} />{error}</p>
-            ))}
-          </div>
-        )}
-        {successMessage && (
-          <div className="mt-4">
-            <p className="text-green-700 flex items-center gap-2"><LiaCheckDoubleSolid size={15}/>{successMessage}</p>
-          </div>
-        )}
-        </form>
-      </div>
-
-
+    <div data-aos="fade-up" className='  flex ml-8  flex-col  gap-1 bg-cyan-600 rounded-xl w-[280px] md:w-[475px] h-auto p-4 md:p-8 shadow-2xl'>
+      <h1 className='text-white text-[.9em] md:text-[1.5em]'>Fill The Form For More Details And All the Details Are Mendatory</h1>
+      <form onSubmit={handleSubmit}>
+      <div>
+      
+      <h1 className='text-[.8em] md:text-[1.3em] text-white' >Name*</h1>
+     
+      <input id='firstname' name='fullname' onChange={handleChange} placeholder="First Name" className='rounded-[4px] w-[240px] md:w-[400px] bg-white p-2 placeholder:text-sm placeholder-cyan-700 font-semibold' type="text"  />
 
   
-
-  </div>
+      <h1 className='text-[.8em] md:text-[1.3em] text-white'>Contact*</h1>
+      <input id='contact' name='contact' placeholder="Contact"  onChange={handleChange} className='rounded-[4px] w-[240px] md:w-[400px] bg-white p-2 placeholder:text-sm placeholder-cyan-700 font-semibold' type="text" />
+      <h1 className='text-[.8em] md:text-[1.3em] text-white'>Comment Or Message</h1>
+      <textarea id='message' name='message' placeholder="Write your feedback "  onChange={handleChange} className=' p-2 rounded-[4px] resize-none w-[240px] md:w-[400px] h-[120px] text-start placeholder:text-sm  placeholder-cyan-700 font-semibold' type="Text" />
+      <div className='flex gap-2 justify-center items-center mt-1 '>
+      <PiLockSimpleFill className='text-white text-[1.2em] text-center' />
+      <p className='text-white  text-[.8em] md:text-[1.2em] text-center'>Your Information Safe With Us !</p>
+      
+      </div>
+      <button type='submit' className='bg-white mt-2 p-3 w-28 text-cyan-700 rounded-3xl font-semibold '>Submit</button>
+      </div>
+      {errors.length > 0 && (
+        <div className="mt-4">
+          {errors.map((error, index) => (
+            <p key={index} className="text-red-700 flex items-center gap-1"><RxCrossCircled size={15} />{error}</p>
+          ))}
+        </div>
+      )}
+      {successMessage && (
+        <div className="mt-4">
+          <p className="text-green-700 flex items-center gap-2"><LiaCheckDoubleSolid size={15}/>{successMessage}</p>
+        </div>
+      )}
+      </form>
+    </div>
+    </div>
     </div>
       <div className='h-auto mb-8 flex items-center  pt-8 flex-col text-white'>
         <h1 className='bg-gradient-to-r from-cyan-500 to-blue-700 p-4 text-white rounded-[80px] text-[1.4em] md:text-[2em]'>Our Real-Estate Services</h1>

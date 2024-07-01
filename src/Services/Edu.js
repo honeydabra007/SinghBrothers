@@ -80,16 +80,16 @@ const Edu = () =>{
    };
   return (
     <div className='font-OpenSans w-full overflow-hidden'>
-    <div  className="relative w-full h-[80vh]">
+    <div  className="relative w-full h-[100vh]">
     <img
       className="object-cover w-full h-full block"
       src={`${process.env.PUBLIC_URL}/Eduteam (1).jpg`}
       alt="SB Logo"
       
     />
-    <div className='  flex flex-col p-4 md:p-32 gap-4 md:gap-0  absolute top-0 left-0 w-full h-[80vh] text-white' style={{backgroundColor: 'rgba(0, 0, 0, 0.5)' }}>
-    <h1 className=' text-[1.2em] md:text-[3em] pt-40 md:pt-0'>Learning For A</h1>
-     <p className=' text-[2.5em] md:text-[5em] w-[300px] md:w-[500px]'>Better Future</p>
+    <div className='  flex flex-col p-4 md:p-32 gap-4 md:gap-0  absolute top-0 left-0 w-full h-[100vh] text-white' style={{backgroundColor: 'rgba(0, 0, 0, 0.5)' }}>
+    <h1 className=' text-[1.2em] md:text-[2.5em]  px-6 md:px-0 pt-8 md:pt-0'>Learning For A</h1>
+     <p className=' text-[2em] md:text-[5em] w-[300px] px-6 md:px-0 md:w-[500px]'>Better Future</p>
    </div>
 
     </div>
@@ -112,37 +112,37 @@ const Edu = () =>{
       </div>
 
 
-       <div className='font-OpenSans'>
+       <div className='font-OpenSans top-60 md:top-0 absolute md:relative '>
       <div className='flex flex-col md:flex-row justify-center gap-8 '>
-        <div data-aos="zoom-in" className='px-8 md:px-0 '>
-          <h1 className=' p-2 mt-6  text-[1.2em] md:text-[2.5em] text-purple-900 font-semibold'>Make An Appointment Here</h1>
-          <ol className=' p-2 text-[.8em] md:text-[1.2em] hidden md:block   text-black w-[300px] md:w-[500px] gap-8 list-disc'>
+        <div data-aos="zoom-in" className='px-8 md:px-0 hidden md:block  '>
+          <h1 className=' p-2 mt-6  text-[1.2em] md:text-[2.5em] text-cyan-900 font-semibold'>Make An Appointment Here</h1>
+          <ol className=' p-2 text-[.8em] md:text-[1.2em]   text-black w-[300px] md:w-[500px] gap-8 list-disc'>
           <li className='mt-2'>At Singh Brothers, we are dedicated to providing comprehensive services to individuals, businesses, and organizations across various sectors
           </li>
           <li className='mt-6'>At SinghBrothers we combine our knowledge and quick action to solve problems swiftly. Our services are hassle-free and better than the rest, making sure you have the best experience</li>
           <li className='mt-6'> We are glad that you preferred to contact us. Please fill our short form and one of our friendly team members will contact you back</li></ol>
         </div>
 
-        <div data-aos="fade-up" className=' flex ml-8  flex-col  gap-1  bg-purple-500   rounded-xl w-[320px] md:w-[475px] h-auto p-4 md:p-8 shadow-2xl'>
+        <div data-aos="fade-up" className=' flex ml-8  flex-col  gap-1  bg-cyan-600   rounded-xl w-[280px] md:w-[475px] h-auto p-4 md:p-8 shadow-2xl'>
           <h1 className='text-white text-[.9em] md:text-[1.5em]'>Fill The Form For More Details And All the Details Are Mendatory</h1>
           <form onSubmit={handleSubmit}>
           <div>
           
           <h1 className='text-[.8em] md:text-[1.3em] text-white' >Name*</h1>
          
-          <input id='firstname' name='fullname' onChange={handleChange} placeholder="First Name" className='rounded-[4px] w-[280px] md:w-[400px] bg-white p-2 placeholder:text-sm placeholder-purple-700 font-semibold' type="text"  />
+          <input id='firstname' name='fullname' onChange={handleChange} placeholder="First Name" className='rounded-[4px] w-[240px] md:w-[400px] bg-white p-2 placeholder:text-sm placeholder-cyan-700 font-semibold' type="text"  />
 
       
           <h1 className='text-[.8em] md:text-[1.3em] text-white'>Contact*</h1>
-          <input id='contact' name='contact' placeholder="Contact"  onChange={handleChange} className='rounded-[4px] w-[280px] md:w-[400px] bg-white p-2 placeholder:text-sm placeholder-purple-700 font-semibold' type="text" />
+          <input id='contact' name='contact' placeholder="Contact"  onChange={handleChange} className='rounded-[4px] w-[240px] md:w-[400px] bg-white p-2 placeholder:text-sm placeholder-cyan-700 font-semibold' type="text" />
           <h1 className='text-[.8em] md:text-[1.3em] text-white'>Comment Or Message</h1>
-          <textarea id='message' name='message' placeholder="Write your feedback "  onChange={handleChange} className=' p-2 rounded-[4px] resize-none w-[280px] md:w-[400px] h-[120px] text-start placeholder:text-sm  placeholder-purple-700 font-semibold' type="Text" />
-          <div className='flex gap-4 justify-center items-center mt-1 '>
+          <textarea id='message' name='message' placeholder="Write your feedback "  onChange={handleChange} className=' p-2 rounded-[4px] resize-none w-[240px] md:w-[400px] h-[120px] text-start placeholder:text-sm  placeholder-cyan-700 font-semibold' type="Text" />
+          <div className='flex gap-2 justify-center items-center mt-1 '>
           <PiLockSimpleFill className='text-white text-[1.2em] text-center' />
-          <p className='text-white  text-[0.7em ] md:text-[1.2em] text-center'>Your Information Safe With Us !</p>
+          <p className='text-white  text-[0.8em] md:text-[1.2em] text-center'>Your Information Safe With Us !</p>
           
           </div>
-          <button type='submit' className='bg-white mt-2 p-3 w-28 text-purple-700 rounded-3xl font-semibold '>Submit</button>
+          <button type='submit' className='bg-white mt-2 p-3 w-28 text-cyan-700 rounded-3xl font-semibold '>Submit</button>
           </div>
           {errors.length > 0 && (
             <div className="mt-4">
