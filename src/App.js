@@ -14,10 +14,10 @@ import Gov from './Services/Gov';
 import Law from './Services/Law';
 import Do from './component/Do';
 import SSO from './Services/Government/SSO';
-import NagarNigam from './Services/Government/NagarNigam'
+import NagarNigam from './Services/Government/NagarNigam';
 import Jda from './Services/Government/Jda';
-import Heritage from './Services/Government/Heritage'
-import RajRera from './Services/Government/RajRera'
+import Heritage from './Services/Government/Heritage';
+import RajRera from './Services/Government/RajRera';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 import { SearchResultsList } from "./component/SearchResultsList";
@@ -25,9 +25,7 @@ import Medical from './Services/Government/Medical';
 import Raj from './Services/Government/Raj';
 import HighCourt from './Services/Government/HighCourt';
 import Motion from './Services/Government/Motion';
-
-
-
+import ScrollToTop from './component/ScrollToTop';  // ScrollToTop component import karein
 
 const App = () => {
   const [results, setResults] = useState([]);
@@ -43,6 +41,7 @@ const App = () => {
   return (
     <div>
       <BrowserRouter>
+        <ScrollToTop />  {/* ScrollToTop component yaha add karein */}
         <div className="App">
           <div className="search-bar-container">
             <Nav setResults={setResults} />
@@ -69,13 +68,7 @@ const App = () => {
           <Route path="/raj" element={<Raj />} />
           <Route path="/highcourt" element={<HighCourt />} />
           <Route path="/motion" element={<Motion />} />
-        
-          
-          
-         
-          
         </Routes>
-      
         <Footer />
       </BrowserRouter>
     </div>

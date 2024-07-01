@@ -34,9 +34,11 @@ useEffect(() => {
     return () => clearInterval(interval);
 }, []);
 
+
   
 
   return (
+
     <div className="mb-6">
       <button
         className="flex items-center justify-between w-full px-4 py-3 bg-white rounded-lg shadow-md hover:shadow-lg focus:outline-none"
@@ -50,6 +52,12 @@ useEffect(() => {
   );
 };
 const Home = () =>{
+  // const [showImage, setShowImage] = useState(true);
+
+  // const handleClose = () => {
+  //   setShowImage(false);
+  // };
+
   return (
     <div  className='font-OpenSans w-full overflow-hidden' >
     
@@ -257,6 +265,31 @@ HR management is about hiring, training, and retaining employees</p>
   
 </div>
 </div>
+{
+  
+  // {showImage && (
+    //   <motion.div
+    //     className="image-container p-4 rounded-lg shadow-lg absolute top-40 right-[280px] m-4"
+    //     initial={{ opacity: 0 }}
+//     animate={{ opacity: 1 }}
+//     exit={{ opacity: 0 }}
+//     transition={{ duration: 0.3 }}
+//   >
+//     <img
+//       src="/SB-logo-9 (1).png" // Replace with your image path
+//       alt="Ad"
+//       className="h-[380px] w-[750px] rounded-lg"
+//     />
+//     <button
+//       className="close-button absolute top-2 right-2 bg-red-500 text-white rounded-full p-2 hover:bg-red-600 focus:outline-none"
+//       onClick={handleClose}
+//     >
+//       &times;
+//     </button>
+//   </motion.div>
+// )}
+}
+
 
     
       

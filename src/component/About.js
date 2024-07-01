@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 const About = () => {
   return (
-    <>
+    <div className='w-full overflow-hidden'>
     <div  className="relative w-full h-[80vh] font-OpenSans">
     <img
       className="object-cover w-full h-full block"
@@ -49,7 +49,7 @@ const About = () => {
     </div>
     
     </div>
-    </>
+    </div>
   )
 }
 
