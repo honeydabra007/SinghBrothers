@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import './App.css';
+
+import './index.css'; // Ensure Tailwind CSS is imported
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Nav from './component/Nav';
 import Home from './component/Home';
@@ -25,7 +27,7 @@ import Medical from './Services/Government/Medical';
 import Raj from './Services/Government/Raj';
 import HighCourt from './Services/Government/HighCourt';
 import Motion from './Services/Government/Motion';
-import ScrollToTop from './component/ScrollToTop';  // ScrollToTop component import karein
+import ScrollToTop from './component/ScrollToTop';// ScrollToTop component import karein
 
 const App = () => {
   const [results, setResults] = useState([]);
@@ -40,6 +42,7 @@ const App = () => {
 
   return (
     <div>
+   
       <BrowserRouter>
         <ScrollToTop />  {/* ScrollToTop component yaha add karein */}
         <div className="App">
@@ -68,6 +71,7 @@ const App = () => {
           <Route path="/raj" element={<Raj />} />
           <Route path="/highcourt" element={<HighCourt />} />
           <Route path="/motion" element={<Motion />} />
+          
         </Routes>
         <Footer />
       </BrowserRouter>

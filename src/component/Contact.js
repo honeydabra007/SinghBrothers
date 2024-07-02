@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import axios from 'axios'
 import { RxCrossCircled } from "react-icons/rx"
 import { LiaCheckDoubleSolid } from "react-icons/lia" 
+import { PiLockSimpleFill } from "react-icons/pi";
 
 
 const Contact = () => {
@@ -76,6 +77,11 @@ const Contact = () => {
           <input id='contact' name='contact' placeholder="Contact"  onChange={handleChange} className='rounded-[4px] w-[280px] md:w-[465px] bg-white p-2 placeholder:text-sm placeholder-blue-700 font-semibold' type="text" />
           <h1 className='text-[.8em] md:text-[1.3em] text-white'>Comment Or Message</h1>
           <textarea id='message' name='message' placeholder="Write your feedback "  onChange={handleChange} className=' p-2 rounded-[4px] resize-none w-[280px] md:w-[465px] h-[120px] text-start placeholder:text-sm  placeholder-blue-700 font-semibold' type="Text" />
+           <div className='flex gap-2 justify-center items-center mt-1 '>
+          <PiLockSimpleFill className='text-white text-[1.2em] text-center' />
+          <p className='text-white  text-[0.8em] md:text-[1.2em] text-center'>Your Information Safe With Us !</p>
+          
+          </div>
           <button type='submit' className='bg-white mt-2 p-3 w-28 text-blue-700 rounded-3xl font-semibold '>Submit</button>
           </div>
           {errors.length > 0 && (

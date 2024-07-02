@@ -3,6 +3,7 @@ import { TbMessageCircle2 } from "react-icons/tb";
 import { Link } from 'react-router-dom';
 
 const About = () => {
+ 
   return (
     <div className='w-full overflow-hidden'>
     <div  className="relative w-full h-[80vh] font-OpenSans">
@@ -49,7 +50,8 @@ const About = () => {
     </div>
     
     </div>
-    </div>
+</div>
+   
   )
 }
 
