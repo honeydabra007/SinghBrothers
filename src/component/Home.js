@@ -10,29 +10,20 @@ import { PiStarHalf } from "react-icons/pi";
 import { FaCoins } from "react-icons/fa";
 import { MdOutlineAlignVerticalBottom } from "react-icons/md";
 import { GoPerson } from "react-icons/go";
-import { useState,useEffect } from 'react';
+import { useState } from 'react';
 import { FiPlus } from "react-icons/fi";
 import { FiMinus } from "react-icons/fi"
 import { TbMessageCircle2 } from "react-icons/tb";
-import { motion } from 'framer-motion';
+import { TbArrowBadgeRight } from "react-icons/tb";
+
 
 
 
 const Homeitem = ({ question, answer }) => {
   const [isOpen, setIsOpen] = useState(false);
-const [progress, setProgress] = useState(0);
 
-useEffect(() => {
-    const interval = setInterval(() => {
-        setProgress(prevProgress => {
-            const newProgress = prevProgress + 2; // Increment progress by 2% per interval (adjust as desired)
-            if (newProgress >= 85) clearInterval(interval); // Stop when reaching 85%
-            return newProgress;
-        });
-    }, 30); // Decreased interval to 30ms for faster animation
 
-    return () => clearInterval(interval);
-}, []);
+
 
 
   
@@ -76,11 +67,17 @@ const Home = () =>{
 
 <div className='flex items-center flex-col-reverse md:flex-row gap-4 md:gap-20  px-0 md:px-40  h-auto md:h-[90vh]'>
 <div data-aos="fade-right" data-aos-easing="linear" data-aos-duration="800" >
-<img className='   h-[300px] md:h-[450px] w-[300px] md:w-[450px] mb-10 md:mb-0 rounded-br-[30px]  rounded-tl-[30px] shadow-xl  shadow-cyan-950 mt-4 md:mt-14 object-cover ' src='\side-view-business-man-outdoor.jpg' alt=''/>
+<img className='   h-[300px] md:h-[450px] w-[300px] md:w-[450px] mb-10 md:mb-0 rounded-br-[30px]  rounded-tl-[30px] shadow-xl  shadow-cyan-950 mt-4 md:mt-14 object-cover' src='\side-view-business-man-outdoor.jpg' alt=''/>
 </div>
 <div  data-aos="fade-left" data-aos-easing="linear"  className='  mt-12 md:mt-14 flex flex-col px-10 md:px-0 font-semibold'>
 <h1 className=' text-[2em] md:text-[3em] text-blue-900'>About Us👋</h1>
 <p className=' text-[.9em]  md:text-[1.4em] w-auto md:w-[500px] mt-4 font-semibold '>At Singh Brothers, we are dedicated to providing comprehensive services to individuals, businesses, and organizations across various sectors. With a team of experienced professionals and a commitment to excellence, we strive to be your trusted partner in navigating the complexities of today’s ever-changing landscape</p>
+<Link to="/about"><button className=' rounded-full flex bg-blue-700 text-white transition-all duration-200 ease-in-out hover:scale-110  justify-between items-center w-[150px] text-[1em] mt-5 p-4'>Know More<PiArrowRightLight className='animate-ping' /></button></Link>
+
+
+
+
+
 </div>
 
   
@@ -265,32 +262,7 @@ HR management is about hiring, training, and retaining employees</p>
   
 </div>
 </div>
-{
 
-  
-  // {showImage && (
-  //     <motion.div
-  //     className="image-container  p-4 rounded-lg shadow-lg absolute top-40 right-2 md:right-[280px] m-4"
-  //       initial={{ opacity: 0 }}
-  //   animate={{ opacity: 1 }}
-  //   exit={{ opacity: 0 }}
-  //   transition={{ duration: 0.3 }}
-  // >
-  //   <img
-  //     src="/SB-logo-9 (1).png" // Replace with your image path
-  //     alt="Ad"
-  //     className="h-[340px] w-full md:w-[750px] rounded-lg"
-  //     />
-  //     <button
-  //     className="close-button absolute top-2 right-2 bg-red-500 text-white rounded-full p-2 hover:bg-red-600 focus:outline-none"
-  //     onClick={handleClose}
-  //     >
-  //     &times;
-  //     </button>
-  //     </motion.div>
-  //   )}
-    
-  }
 
 
     

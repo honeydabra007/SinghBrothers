@@ -50,6 +50,24 @@ const About = () => {
     </div>
     
     </div>
+    <div className='p-8 md:p-16 w-full flex flex-col md:flex-row gap-5 md:gap-16'>
+    <div>
+    <img data-aos="fade-right" className='h-[250px] object-cover md:h-[550px] shadow-2xl w-[340px] md:w-[2200px] ' src='/into-success-group-young-freelancers-office-have-conversation-smiling (1).jpg' alt=''/>
+    
+    </div>
+    <div data-aos="fade-left" className='flex flex-col gap-2 w-full md:w-auto  text-cyan-800  '>
+    <h1 className=' text-[1.2em] md:text-[2em] font-bold '>Your Bussiness, Our Expertise,Your Success</h1>
+    <p className=" text-[1em] md:text-[1.3em]   ">Your business, our expertise—driving your success with innovative strategies and personalized solutions. Partner with us to unlock potential, overcome challenges, and achieve your goals with confidence and clarity</p>
+    <ol className=' text-[.9em] md:text-[1.2em]  list-disc  flex flex-col gap-3 font-semibold text-black'>
+    <li>Your business, our expertise—where success meets strategy.</li>
+    <li>Partnering with us means unlocking your business potential, driven by expert guidance</li>
+    <li>Tailored solutions for your business challenges, ensuring your path to success</li>
+    <li>Experience the difference with our dedicated approach—your success is our mission</li>
+    <li>Crafting success stories together, with tailored solutions and expert insights</li>
+    </ol>
+   
+    </div>
+    </div>
 </div>
    
   )
